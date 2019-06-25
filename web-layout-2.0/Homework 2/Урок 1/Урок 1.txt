@@ -1,0 +1,46 @@
+Урок 1. Структура HTML5-документа
+Выписать из справочника по HTML (webref.ru) теги структуры тела (BODY) HTML5-документа, которые не рассматривались в уроке.
+
+<figure></figure>
+<frame></frame>
+<hgroup></hgroup>
+<menu></menu>
+________________________________________________________________________________________________________
+Доработка
+
+все HTML5 теги отмечены цифрой 5 на оранжевом фоне, прочтите про все и про их атрибуты, выпишите все и пришлите в задании.
+
+<article>...</article>
+<aside>...</aside>
+<audio autoplay controls loop muted preload src>...</audio>
+<bdi>...</bdi>
+<canvas id="" height width>...</canvas>
+<data value="">...</data>
+<datalist id="">...</datalist>
+<details open>...</details>
+<dialog open>...</dialog>
+<figure>...</figure>
+<figcaption>...</figcaption>
+<footer>...</footer>
+<header>...</header>
+<main>...</main>
+<mark>...</mark>
+<menu label type>...</menu>
+<menuitem checked default disabled icon label radiogroup type>
+<meter value="" min max low high optimum>...</meter>
+<nav>...</nav>
+<output for form name>...</output>
+<picture> <source> <img>...</picture>
+<progress value="" max="">...</progress>
+<rt>...</rt>
+<rp>...</rp>
+<rtc>...</rtc>
+<ruby>...</ruby>
+<section>...</section>
+<source media sizes src srcset type>
+<summary>...</summary>
+<template>...</template> 
+<time datetime pubdate>...</time>
+<track kind="subtitles captions	descriptions chapters metadata" src srclang label default>
+<video autoplay controls height loop poster preloa src width>...</video>
+<wbr>

@@ -1,0 +1,48 @@
+<!--Урок 5. Семантическая вёрстка, стандарты и валидность
+Проверить в валидаторе созданные в предыдущих уроках страницы – антибиотика и формы – и
+исправить в них все ошибки, чтобы страницы были полностью валидны.
+Задание «со звездочкой»: исправить страницу с таблицей так, чтобы она
+была валидна и отображалась также с использованием стилей (CSS).-->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма отправки заявки на конференцию</title>
+  </head>
+  <body>
+    <form method="post">
+      <h1>Отправка заявки на конференцию</h1>
+        <h2>Основные данные</h2>
+          <h3>* Фамилия, Имя, Отчество:</h3>
+            <input type="text" name="yourname" size="55" required="required">
+          <h3>Дата рождения:</h3>
+            <input type="text" placeholder="дд.мм.гггг" name="birthdate" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}">
+          <h3>Пол:</h3>
+            <input id="man" type="radio" name="gender"><label for="man">&nbsp;Мужской</label>
+            <input id="woman" type="radio" name="gender"><label for="woman">&nbsp;Женский</label>
+        <h2>Данные для создания личного кабинета</h2>
+          <h3>* Адрес электронной почты:</h3>
+            <input type="email" name="youremail" size="55" required="required">
+          <h3>* Пароль для создания личного кабинета:</h3>
+            <input type="password" name="yourpassword" minlength="8" size="55" required="required">
+          <h3>* Подтверждение пароля:</h3>
+            <input type="password" name="yourvalidpassword" minlength="8" size="55" required="required">
+        <h2>Материалы для конференции</h2>
+          <h3>* Тема доклада:</h3>
+            <input type="text" name="topic" size="55" required="required">
+          <h3>* Тезисы доклада (не более 1000 символов)</h3>
+            <textarea name="theses" maxlength="1000" rows="10" cols="55" required="required"></textarea>
+          <h3>Файл презентации:</h3>
+            <input type="file" name="yourname" size="55">
+        <h2>Дополнительные опции</h2>
+          <input id="hotel" type="checkbox"><label for="hotel">&nbsp;Проживание в отеле</label><br>
+          <input id="breakfast" type="checkbox"><label for="breakfast">&nbsp;Завтрак</label><br>
+          <input id="lunch" type="checkbox"><label for="lunch">&nbsp;Обед</label><br>
+          <input id="dinner" type="checkbox"><label for="dinner">&nbsp;Ужин</label>
+        <hr>
+        <input type="submit" name="submitbutton">
+        <hr>
+        <small>*Поля, отмеченные звездочкой, являются обязательными для заполнения</small>
+    </form>
+  </body>
+</html>

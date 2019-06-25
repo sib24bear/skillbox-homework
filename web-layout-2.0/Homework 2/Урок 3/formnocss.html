@@ -1,0 +1,132 @@
+<!--Урок 3. Верстка веб-форм. Поля и кнопки. Валидация форм
+Самостоятельно сверстать форму, изображенную на картинке “Форма.png”, не используя CSS.
+_______________________________________________________________________________________
+Тегу <form> добавить атрибуты action и enctype ( https://webref.ru/html/form/enctype )
+и кратко выписать зачем они нужны и что будет если их не прописать.
+всем input type="radio" и input type="checkbox" прописать атрибут value, выписать
+зачем он и что будет если его не прописать.
+Теперь давайте, как и во 2ом уроке, пойдем дальше и добавим семантики и еще тегов!
+Прочтите в справочнике про теги <form>, <input>, <label>, <fieldset>, <legend>
+и, ЭТО ОЧЕНЬ ВАЖНО, про их атрибуты!
+Это очень важная и обширная тема, но ее нужно обязательно очень детально изучить!
+После того, как изучите справочник по этим тегам нужно будет переписать страницу
+так, чтоб в ней были все необходимые теги и все
+нужные атрибуты(особое внимание уделите атрибутам тегов <form> и <input>).
+Для наглядности атрибуту action у form задайте значение https://echo.htmlacademy.ru,
+ заполните поля формы и отправьте ее, в ответ придет как раз та информация которую
+ вы отправили, из вашей формы, это наглядно покажет в каком виде информация
+ отправляется на сервер! Попробуйте изменить атрибуты полей ввода и посмотрите
+ как меняется информация!
+_______________________________________________________________________________________
+Урок 3.
+все br и hr убрать из кода, эти теги даны вам для ознакомления, они существуют
+ по историческим причинам(с давних времен, когда css еще не было), использование
+ их в наше время не оправдано, цели, для которых их использовали теперь решает css.
+ <br> еще используют, но крайне редко(например для переноса строк при верстке адресов),
+ но в 99% его использование не оправдано.
+
+некоторые label(для поля ввода даты) не связаны с соответствующими им полями ввода.
+В документе все label и input должны быть связаны. Доп вопросы для закрепления:
+как можно связать поле ввода и лейбл для него? какой профит приносит эта связь?
+https://c2n.me/429Q1CS - это отдельный fieldset. "Пол:" - описывает(<legend>)
+всю группу полей ввода, "Мужской" и "Женский" - подписи(<label>) к конкретным полям ввода
+&nbsp; - для чего используется в данном примере?
+придерживайся единообразия: у тебя есть просто "required", а далее по
+коду есть required="required", выбери один вариант и используй его!
+https://c2n.me/429Qmxw - смотри: это в первую очередь параграф(<p>), а уже
+во вторую, этому тексту нужно добавить смысла(семантики) - <small>.
+Оберни small в p
+-->
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма отправки заявки на конференцию</title>
+  </head>
+  <body>
+    <form id="request-form" method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" target="_blank">
+      <!-- action - Адрес программы или документа, который обрабатывает данные формы.
+           Если атрибут action отсутствует, текущая страница перезагружается, возвращая все элементы формы к их значениям по умолчанию.
+           enctype - Определяет способ кодирования данных формы при их отправке на сервер.-->
+      <fieldset form="request-form">
+        <legend>Отправка заявки на конференцию</legend>
+
+        <fieldset form="request-form">
+          <legend>Основные данные</legend>
+
+          <label for="fullName">* Фамилия, Имя, Отчество:</label>
+          <input id="fullName" name="fullName" type="text" size="55" required>
+
+          <label for="birthDate">Дата рождения:</label>
+          <input id="birthDate" name="birthDate" type="date">
+          <!--Такая связь необходима, чтобы изменять значения элементов формы при
+          щелчке курсором мыши на текст. Кроме того, с помощью <label> можно устанавливать
+           горячие клавиши на клавиатуре и переходить на активный элемент подобно ссылкам.
+          id внутри элемента формы и указании его имени в качестве атрибута for элемента <label>-->
+
+          <fieldset>
+            <legend>Пол:</legend>
+
+            <input id="man" name="gender" type="radio" value="man">
+            <!-- value - Определяет значение элемента формы, которое будет отправлено на сервер,
+            если атрибут не указан данные не будут отправлены на сервер -->
+            <label for="man">Мужской</label>
+
+            <input id="woman" name="gender" type="radio" value="woman">
+            <label for="woman">Женский</label>
+            <!--&nbsp; убрал, так как input связан с label-->
+          </fieldset>
+        </fieldset>
+
+        <fieldset form="request-form">
+          <legend>Данные для создания личного кабинета</legend>
+
+          <label for="clientEmail">* Адрес электронной почты:</label>
+          <input id="clientEmail" name="clientEmail" type="email" size="55" required>
+
+          <label for="clientPassword">* Пароль для создания личного кабинета:</label>
+          <input id="clientPassword" name="clientPassword" type="password" size="55" required minlength="8">
+
+          <label for="clientValidPassword">* Подтверждение пароля:</label>
+          <input id="clientValidPassword" name="clientValidPassword" type="password" size="55" required minlength="8">
+        </fieldset>
+
+        <fieldset form="request-form">
+          <legend>Материалы для конференции</legend>
+
+          <label for="topic">* Тема доклада:</label>
+          <input id="topic" name="topic" type="text" size="55" required>
+
+          <label for="theses">* Тезисы доклада (не более 1000 символов)</label>
+          <textarea id="theses" name="theses" rows="10" cols="55" maxlength="1000" required></textarea>
+
+          <label for="clientWorkFiles">Файл презентации:</label>
+          <input id="clientWorkFiles" name="clientWorkFiles" type="file" size="55">
+        </fieldset>
+        <fieldset form="request-form">
+          <legend>Дополнительные опции</legend>
+
+          <input id="hotel" name="options" type="checkbox" value="hotel">
+          <label for="hotel">Проживание в отеле</label>
+
+          <input id="breakfast" name="options" type="checkbox" value="breakfast">
+          <label for="breakfast">Завтрак</label>
+
+          <input id="lunch" name="options" type="checkbox" value="lunch">
+          <label for="lunch">Обед</label>
+
+          <input id="dinner" name="options" type="checkbox" value="dinner">
+          <label for="dinner">Ужин</label>
+        </fieldset>
+
+        <input name="conferenceApplications" type="submit" form="request-form">
+
+        <footer>
+          <p>
+            <small>*Поля, отмеченные звездочкой, являются обязательными для заполнения</small>
+          </p>
+        </footer>
+      </fieldset>
+    </form>
+  </body>
+</html>
