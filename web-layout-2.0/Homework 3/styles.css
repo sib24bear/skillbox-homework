@@ -24,7 +24,6 @@ main {
 
 .top-bar {
 	padding: 20px 0;
-  font-size: 16px;
 	color: #fff;
 	background-color: #00122f;
 }
@@ -36,8 +35,10 @@ a {
 	color: #fff;
 }
 
-.top-bar p {
+.top-bar h1 {
   display: inline;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 .top-bar
@@ -47,66 +48,42 @@ time {
 
 .info-bar {
 	display: inline-block;
-	vertical-align: baseline;
+	vertical-align: middle;
 	width: 100%;
 	margin-top: 40px;
 }
 
 .title-logo {
   display: inline-block;
-	width: 140px;
 	margin-right: 40px;
-}
-
-.title-logo
-img {
-  float: left;
-  margin-right: 10px;
-	margin-top: 2.5px;
-}
-
-.text-logo {
-	display: inline-block;
-	vertical-align: middle;
-	padding-top: 5px;
-	width: 90px;
-}
-
-.title-logo
-a {
-  text-decoration: none;
-	font-size: 14px;
-	font-weight: bold;
-	color: #000;
 }
 
 .change-locate {
-	width: 80px;
-	margin-right: 40px;
-	padding-bottom: 3px;
-	border: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	padding: 12px 12px 3px 0;
+	text-decoration: none;
 	border-bottom: 2px dashed #448ccb;
-	outline:none;
 	font-size: 16px;
 	color: #448ccb;
-	background-color: inherit;
+	background-image: url('img/down-arrow.png');
+	background-repeat: no-repeat;
+	background-position:right 70%;
 }
 
 .date-time {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
+	margin: 0 20px;
 	padding: 12px 0;
 	font-size: 16px;
 	color: #91919f;
 	background: #fff;
 }
 
-.date-time
-time {
-	margin-right: 20px;
-}
-
 .time-icon {
+	margin-left: 20px;
 	padding-left: 20px;
 	background-image: url('img/clock.png');
 	background-repeat: no-repeat;
@@ -114,14 +91,19 @@ time {
 }
 
 .weather {
+	margin-left: 20px;
 	padding-left: 30px;
 	background-image: url('img/cloudy.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-.serch-field {
+#searchForm {
+	position: relative;
 	float:right;
+}
+
+.search-field {
 	width: 320px;
 	height: 45px;
 	padding-left: 20px;
@@ -131,9 +113,13 @@ time {
 	font-size: 14px;
 	color: #000;
 	background-color: #ebebeb;
-	background-image: url('img/search.png');
-	background-repeat: no-repeat;
-	background-position: 95% 50%;
+}
+
+.search-btn {
+	position: absolute;
+	top: 35%;
+	left: 90%;
+	outline:none;
 }
 
 .head-menu-item {
@@ -148,16 +134,18 @@ li {
    margin: 35px 0;
 }
 
+.head-menu-item
+li + li::before {
+	content: '/';
+	margin: 0 10px;
+	font-size: 20px;
+	color: #91919f;
+}
+
 .head-nav-btn {
   text-decoration:none;
   font-size: 16px;
 	color: #000;
-}
-
-.dash {
-	margin: 0 10px;
-	font-size: 20px;
-	color: #91919f;
 }
 
 .head-nav-btn:hover {
@@ -186,13 +174,23 @@ a {
 	color: #000;
 }
 
+.news-list {
+	margin: 0;
+	padding: 0;
+}
+
+.news-list
+li {
+	list-style-type: none;
+}
+
 .todays-news-item {
 	padding: 20px 18px 0;
 	border-bottom: 1px solid #fff;
 }
 
 .todays-news-item
-h4 {
+h3 {
 	margin: 0;
 }
 
@@ -207,7 +205,7 @@ a {
 .footer-thread-item {
 	position: relative;
 	width: 200px;
-	margin-top: 20px;
+	margin-top: 9px;
 	font-size: 12px;
 	color: #000;
 }
@@ -418,12 +416,12 @@ p {
 }
 
 .top-news-item
-h4 {
+h3 {
 	margin: 0;
 }
 
 .top-news-item
-h4
+h3
 a {
 	text-decoration: none;
 	font-size: 16px;

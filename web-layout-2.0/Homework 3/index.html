@@ -8,98 +8,74 @@
   </head>
   <body>
     <header>
-      <section class="top-bar">
-        <h2 class="visually-hidden">headline</h2>
-
+      <div class="top-bar">
         <div class="fixed-container">
-          <p>Самые
+          <h1>Самые
             <a href="#">свежие новости</a> в реальном времени
-          </p>
+          </h1>
 
           <time datetime="2019-06-19T12:30">12.30 19.06.2019</time>
         </div>
-      </section>
+      </div>
 
-      <section class="fixed-container">
-        <h2 class="visually-hidden">headline</h2>
-
+      <div class="fixed-container">
         <div class="info-bar">
           <div class="title-logo">
             <a href="#">
-              <img src="img/logo.png" alt="globe-logo">
-
-              <span class="text-logo">Новостное агенство</span>
+              <img src="img/nav-logo.png" alt="globe-logo">
             </a>
           </div>
 
-          <select class="change-locate" name="change-locate">
-            <option value="moscow">Москва</option>
-
-            <option value="sochi">Сочи</option>
-
-            <option value="spb">Санкт-Петербург</option>
-          </select>
+          <a class="change-locate" href="#">Москва</a>
 
           <div class="date-time">
-            <time datetime="2019-06-19T12:30">19 июня, вторник</time>
+            <time datetime="2019-06-19T12:30">19 июня, вторник
+              <span class="time-icon">12:30</span>
+            </time>
 
-            <time class="time-icon" datetime="2019-06-19T12:30">12:30</time>
-
-            <span class="weather">+22 °C</span>
+            <span class="weather">+22 &#8451;</span>
           </div>
 
-          <input class="serch-field" name="serchToSite" type="search" placeholder="Поиск по сайту">
+          <form id="searchForm" method="get" action="https://echo.htmlacademy.ru" enctype="text/plain" target="_blank">
+            <input class="search-field" name="searchToSite" type="search" placeholder="Поиск по сайту">
+
+            <input class="search-btn" name="cursorPosition" type="image" src="img/search.png" form="searchForm" alt="lens">
+          </form>
         </div>
-      </section>
+      </div>
 
       <nav class="fixed-container">
         <ul class="head-menu-item">
           <li>
             <a class="head-nav-btn" href="#">Главная</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
             <a class="head-nav-btn" href="#">Политика</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
             <a class="head-nav-btn" href="#">Общество</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
             <a class="head-nav-btn" href="#">Экономика</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
             <a class="head-nav-btn" href="#"> В мире</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
             <a class="head-nav-btn" href="#">Проишествия</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
             <a class="head-nav-btn" href="#">Спорт</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
             <a class="head-nav-btn" href="#">Наука</a>
-
-            <span class="dash">/</span>
           </li>
 
           <li>
@@ -110,105 +86,117 @@
     </header>
 
     <main>
-      <section class="fixed-container">
-        <h2 class="visually-hidden">headline</h2>
-
-        <aside class="todays-news-column">
+      <div class="fixed-container">
+        <section class="todays-news-column">
           <h2 class="title-block">
             <a href="#">Новости дня</a>
           </h2>
 
-          <article class="todays-news-item">
-            <h4>
-              <a href="#">Кот Ахилл предсказал победу российской сборной
-              над Египтом на ЧМ-2018</a>
-            </h4>
+          <ul class="news-list">
+            <li>
+              <article class="todays-news-item">
+                <h3>
+                  <a href="#">Кот Ахилл предсказал победу российской сборной
+                  над Египтом на ЧМ-2018</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ ЧМ по футболу</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ ЧМ по футболу</a>
 
-              <time datetime="2019-06-19T10:48">10:48</time>
+                  <time datetime="2019-06-19T10:48">10:48</time>
 
-              <span class="comment-counter">15</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">15</span>
+                </footer>
+              </article>
+            </li>
 
-          <article class="todays-news-item">
-            <h4>
-              <a href="#">«Нафтогаз»: суд разрешил заморозить
-              активы «Газпрома» в Великобритании</a>
-            </h4>
+            <li>
+              <article class="todays-news-item">
+                <h3>
+                  <a href="#">«Нафтогаз»: суд разрешил заморозить
+                  активы «Газпрома» в Великобритании</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ Политика</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ Политика</a>
 
-              <time datetime="2019-06-19T10:48">10:48</time>
+                  <time datetime="2019-06-19T10:48">10:48</time>
 
-              <span class="comment-counter">15</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">15</span>
+                </footer>
+              </article>
+            </li>
 
-          <article class="todays-news-item">
-            <h4>
-              <a href="#">Минтранс предписал оборудовать общественный
-                транспорт кондиционерами</a>
-            </h4>
+            <li>
+              <article class="todays-news-item">
+                <h3>
+                  <a href="#">Минтранс предписал оборудовать общественный
+                    транспорт кондиционерами</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ Транспорт</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ Транспорт</a>
 
-              <time datetime="2019-06-19T10:48">10:48</time>
+                  <time datetime="2019-06-19T10:48">10:48</time>
 
-              <span class="comment-counter">15</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">15</span>
+                </footer>
+              </article>
+            </li>
 
-          <article class="todays-news-item">
-            <h4>
-              <a href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
-            </h4>
+            <li>
+              <article class="todays-news-item">
+                <h3>
+                  <a href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ Погода</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ Погода</a>
 
-              <time datetime="2019-06-19T10:48">10:48</time>
+                  <time datetime="2019-06-19T10:48">10:48</time>
 
-              <span class="comment-counter">15</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">15</span>
+                </footer>
+              </article>
+            </li>
 
-          <article class="todays-news-item">
-            <h4>
-              <a href="#">Комплексное благоустройство Щелковского шоссе завершится в июне</a>
-            </h4>
+            <li>
+              <article class="todays-news-item">
+                <h3>
+                  <a href="#">Комплексное благоустройство Щелковского шоссе завершится в июне</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ Транспорт</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ Транспорт</a>
 
-              <time datetime="2019-06-19T10:48">10:48</time>
+                  <time datetime="2019-06-19T10:48">10:48</time>
 
-              <span class="comment-counter">15</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">15</span>
+                </footer>
+              </article>
+            </li>
 
-          <article class="todays-news-item">
-            <h4>
-              <a href="#">В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</a>
-            </h4>
+            <li>
+              <article class="todays-news-item">
+                <h3>
+                  <a href="#">В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ ЧМ по футболу</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ ЧМ по футболу</a>
 
-              <time datetime="2019-06-19T10:48">10:48</time>
+                  <time datetime="2019-06-19T10:48">10:48</time>
 
-              <span class="comment-counter">15</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">15</span>
+                </footer>
+              </article>
+            </li>
+          </ul>
 
           <div class="btn-container">
             <button class="all-news-btn" name="allNewsBtn" type="button">Все новости</button>
           </div>
-        </aside>
+        </section>
 
         <section class="main-news">
           <h2 class="visually-hidden">headline</h2>
@@ -224,9 +212,9 @@
               </header>
 
               <footer>
-                <time datetime="2019-06-19T12:30">19 Июня 2018</time>
-
-                <time class="time-icon" datetime="2019-06-19T10:48">10:48</time>
+                <time datetime="2019-06-19T12:30">19 Июня 2018
+                  <span class="time-icon">10:48</span>
+                </time>
               </footer>
           </article>
 
@@ -332,10 +320,6 @@
             <img src="img/banner-2.jpg" alt="рекламный баннер">
           </a>
         </aside>
-      </section>
-
-      <section class="fixed-container">
-        <h2 class="visually-hidden">headline</h2>
 
         <article class="title-top-news">
             <header>
@@ -348,9 +332,9 @@
             </header>
 
             <footer>
-              <time datetime="2019-06-19T12:30">19 Июня 2018</time>
-
-              <time class="time-icon" datetime="2019-06-19T12:30">10:48</time>
+              <time datetime="2019-06-19T12:30">19 Июня 2018
+                <span class="time-icon">10:48</span>
+              </time>
 
               <p> Министерство коммерции Китая заявило, что Пекин примет
                 «качественные» и «количественные» меры, если президент
@@ -359,61 +343,67 @@
             </footer>
         </article>
 
-        <article class="top-news">
+        <section class="top-news">
           <h2 class="title-block">
             <a href="#">Самые читаемые новости</a>
           </h2>
 
-          <article class="top-news-item">
-            <h4>
-              <a href="#">В Турции пообещали найти альтернативу из-за
-                отказа США поставить F-35</a>
-            </h4>
+          <ul class="news-list">
+            <li>
+              <article class="top-news-item">
+                <h3>
+                  <a href="#">В Турции пообещали найти альтернативу из-за
+                    отказа США поставить F-35</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ Политика</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ Политика</a>
 
-              <time datetime="2019-06-19T11:39">11:39</time>
+                  <time datetime="2019-06-19T11:39">11:39</time>
 
-              <span class="comment-counter">25</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">25</span>
+                </footer>
+              </article>
+            </li>
 
-          <article class="top-news-item">
-            <h4>
-              <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
-            </h4>
+            <li>
+              <article class="top-news-item">
+                <h3>
+                  <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ Политика</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ Политика</a>
 
-              <time datetime="2019-06-19T11:39">11:39</time>
+                  <time datetime="2019-06-19T11:39">11:39</time>
 
-              <span class="comment-counter">25</span>
-            </footer>
-          </article>
+                  <span class="comment-counter">25</span>
+                </footer>
+              </article>
+            </li>
 
-          <article class="top-news-item">
-            <h4>
-              <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
-            </h4>
+            <li>
+              <article class="top-news-item">
+                <h3>
+                  <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
+                </h3>
 
-            <footer class="footer-thread-item">
-              <a href="#">/ Политика</a>
+                <footer class="footer-thread-item">
+                  <a href="#">/ Политика</a>
 
-              <time datetime="2019-06-19T11:39">11:39</time>
+                  <time datetime="2019-06-19T11:39">11:39</time>
 
-              <span class="comment-counter">25</span>
-            </footer>
-          </article>
-        </article>
-      </section>
+                  <span class="comment-counter">25</span>
+                </footer>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <section class="fixed-container footer-container">
-        <h2 class="visually-hidden">headline</h2>
-
+      <div class="fixed-container footer-container">
         <nav class="footer-nav">
           <ul class="footer-menu-item">
             <li>
@@ -457,9 +447,7 @@
         <div class="footer-about">
             <div class="title-logo">
               <a href="#">
-                <img src="img/logo.png" alt="globe-logo">
-
-                <span class="text-logo">Новостное агенство</span>
+                <img src="img/footer-logo.png" alt="globe-logo">
               </a>
             </div>
 
@@ -515,12 +503,11 @@
                 </a>
               </div>
           </div>
-      </section>
+      </div>
 
-      <section class="copyright">
-        <h2 class="visually-hidden">headline</h2>
+      <div class="copyright">
         © Новостное агентство, 2017-2018 все права защищены
-      </section>
+      </div>
     </footer>
   </body>
 </html>
