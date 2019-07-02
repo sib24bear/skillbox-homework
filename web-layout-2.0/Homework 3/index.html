@@ -20,26 +20,22 @@
 
       <div class="fixed-container">
         <div class="info-bar">
-          <div class="title-logo">
-            <a href="#">
-              <img src="img/nav-logo.png" alt="globe-logo">
-            </a>
-          </div>
+          <a class="title-logo" href="#">
+            <img src="img/nav-logo.png" alt="globe-logo">
+          </a>
 
           <a class="change-locate" href="#">Москва</a>
 
-          <div class="date-time">
-            <time datetime="2019-06-19T12:30">19 июня, вторник
-              <span class="time-icon">12:30</span>
-            </time>
+          <time datetime="2019-06-19T12:30">19 июня, вторник
+            <span class="time-icon">12:30</span>
+          </time>
 
-            <span class="weather">+22 &#8451;</span>
-          </div>
+          <span class="weather">+22 &#8451;</span>
 
           <form id="searchForm" method="get" action="https://echo.htmlacademy.ru" enctype="text/plain" target="_blank">
             <input class="search-field" name="searchToSite" type="search" placeholder="Поиск по сайту">
 
-            <input class="search-btn" name="cursorPosition" type="image" src="img/search.png" form="searchForm" alt="lens">
+            <input class="search-btn" name="cursorPosition" type="submit" src="img/search.png" form="searchForm" aria-label="Поиск по сайту" alt="lens">
           </form>
         </div>
       </div>
@@ -193,9 +189,7 @@
             </li>
           </ul>
 
-          <div class="btn-container">
-            <button class="all-news-btn" name="allNewsBtn" type="button">Все новости</button>
-          </div>
+          <a class="all-news-btn" href="#">Все новости</a>
         </section>
 
         <section class="main-news">
@@ -205,10 +199,10 @@
               <header>
                 <a class="title-thread" href="#">/ Политика</a>
 
-                <h2>
+                <h3>
                   <a class="title-topic" href="#">В Крыму отреагировали на слова Кравчука
                     о возврате полуострова</a>
-                </h2>
+                </h3>
               </header>
 
               <footer>
@@ -321,32 +315,34 @@
           </a>
         </aside>
 
-        <article class="title-top-news">
-            <header>
-              <a class="title-thread" href="#">/ Политика</a>
 
-              <h2>
-                <a class="title-topic" href="#">Пекин обвинил Вашингтон
-                  в развязывании торговой войны</a>
-              </h2>
-            </header>
-
-            <footer>
-              <time datetime="2019-06-19T12:30">19 Июня 2018
-                <span class="time-icon">10:48</span>
-              </time>
-
-              <p> Министерство коммерции Китая заявило, что Пекин примет
-                «качественные» и «количественные» меры, если президент
-                США Дональд Трамп введет дополнительные пошлины
-                на китайские товары</p>
-            </footer>
-        </article>
 
         <section class="top-news">
           <h2 class="title-block">
             <a href="#">Самые читаемые новости</a>
           </h2>
+
+          <article class="title-top-news">
+              <header>
+                <a class="title-thread" href="#">/ Политика</a>
+
+                <h3>
+                  <a class="title-topic" href="#">Пекин обвинил Вашингтон
+                    в развязывании торговой войны</a>
+                </h3>
+              </header>
+
+              <footer>
+                <time datetime="2019-06-19T12:30">19 Июня 2018
+                  <span class="time-icon">10:48</span>
+                </time>
+
+                <p> Министерство коммерции Китая заявило, что Пекин примет
+                  «качественные» и «количественные» меры, если президент
+                  США Дональд Трамп введет дополнительные пошлины
+                  на китайские товары</p>
+              </footer>
+          </article>
 
           <ul class="news-list">
             <li>
@@ -445,11 +441,9 @@
         </nav>
 
         <div class="footer-about">
-            <div class="title-logo">
-              <a href="#">
-                <img src="img/footer-logo.png" alt="globe-logo">
-              </a>
-            </div>
+            <a class="title-logo" href="#">
+              <img src="img/footer-logo.png" alt="globe-logo">
+            </a>
 
             <ul class="footer-menu-item">
                 <li>
@@ -469,44 +463,32 @@
         <div class="footer-contacts">
             <ul class="footer-social-item">
                 <li>
-                  <a class="footer-soc-btn" href="https://www.vk.com">
-                    <img src="img/vk-logo.png" alt="vk-logo">
-                  </a>
+                  <a class="footer-soc-btn" href="https://www.vk.com" aria-label="VK">.</a>
                 </li>
 
                 <li>
-                  <a class="footer-soc-btn" href="https://www.facebook.com">
-                    <img src="img/fb-logo.png" alt="facebook-logo">
-                  </a>
+                  <a class="footer-soc-btn" href="https://www.facebook.com" aria-label="Facebook"</a>
                 </li>
 
                 <li>
-                  <a class="footer-soc-btn" href="https://www.twitter.com">
-                    <img src="img/tw-logo.png" alt="twitter-logo">
-                </a>
+                  <a class="footer-soc-btn" href="https://www.twitter.com" aria-label="Twitter"></a>
                 </li>
 
                 <li>
-                  <a class="footer-nav-btn" href="https://www.instagram.com">
-                    <img src="img/inst-logo.png" alt="instagram-logo">
-                  </a>
+                  <a class="footer-nav-btn" href="https://www.instagram.com" aria-label="Instagram"></a>
                 </li>
               </ul>
 
               <div class="contacts-list">
-                <a href="#">
-                  <img src="img/call-answer.png" alt="handset-logo">+7 (499) 995-55-55
-                </a>
+                <a href="tel:+74999955555">+7 (499) 995-55-55</a>
 
-                <a href="#">
-                  <img src="img/envelope.png" alt="envelope-logo">info@agency.ru
-                </a>
+                <a href="mailto:info@agency.ru">info@agency.ru</a>
               </div>
           </div>
       </div>
 
       <div class="copyright">
-        © Новостное агентство, 2017-2018 все права защищены
+        <p>© Новостное агентство, 2017-2018 все права защищены</p>
       </div>
     </footer>
   </body>
