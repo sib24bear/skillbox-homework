@@ -3,10 +3,11 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: 1000px;
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 }
 
 main {
+	padding-bottom: 60px;
 	padding-top: 20px;
 	background-color: #f9f9f9;
 	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 1%)
@@ -46,23 +47,23 @@ time {
   float:right;
 }
 
-.info-bar {
-	display: inline-block;
-	vertical-align: middle;
-	width: 100%;
-	margin-top: 40px;
-}
-
 .title-logo {
   display: inline-block;
+	width: 121px;
+	height: 40px;
+	margin-top: 40px;
 	margin-right: 40px;
+	background-image: url('img/nav-logo.png');
+	background-repeat: no-repeat;
 }
 
 .change-locate {
 	display: inline-block;
 	vertical-align: top;
+	margin-top: 50px;
 	margin-right: 20px;
-	padding: 12px 12px 3px 0;
+	padding-right: 12px;
+	padding-bottom: 3px;
 	text-decoration: none;
 	border-bottom: 2px dashed #448ccb;
 	font-size: 16px;
@@ -75,8 +76,7 @@ time {
 .date-time {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 20px;
-	padding: 12px 0;
+	margin: 50px 20px 0 20px;
 	font-size: 16px;
 	color: #91919f;
 	background: #fff;
@@ -91,7 +91,9 @@ time {
 }
 
 .weather {
-	margin-left: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 50px 20px 0 20px;
 	padding-left: 30px;
 	background-image: url('img/cloudy.png');
 	background-repeat: no-repeat;
@@ -101,6 +103,7 @@ time {
 #searchForm {
 	position: relative;
 	float:right;
+	margin-top: 35px;
 }
 
 .search-field {
@@ -119,7 +122,17 @@ time {
 	position: absolute;
 	top: 35%;
 	left: 90%;
+	width: 16px;
+	height: 16px;
+	padding-left: 16px;
 	outline:none;
+	border: none;
+	color: #ebebeb;
+	background-color: #ebebeb;
+	background-image: url('img/search.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
 }
 
 .head-menu-item {
@@ -246,17 +259,19 @@ time {
 }
 
 .all-news-btn {
-	width: 150px;
-	height: 45px;
-	margin-top: 30px;
-	margin-bottom: 25px;
+	display: inline-block;
+	text-align: center;
+	width: 176px;
+	height: 43px;
+	line-height: 43px;
+	margin: 25px 0 25px 35px;
 	border: 2px solid #448ccb;
-	border-radius: 22.5px;
+	border-radius: 23px;
+	text-decoration: none;
 	font-size: 14px;
 	color: #448ccb;
 	background-color: inherit;
 	cursor: pointer;
-	outline: none;
 }
 
 .main-news {
@@ -363,12 +378,22 @@ img {
 	margin-bottom: 20px;
 }
 
-.title-top-news {
+.top-news {
 	display: inline-block;
 	vertical-align: top;
+	background-color: #fff;
+}
+
+.topnews-title {
+	width: 334px;
+	float: right;
+}
+
+.title-top-news {
+	display: inline-block;
+	float: left;
 	width: 490px;
 	padding: 110px 82px 40px 18px;
-	margin-bottom: 60px;
 	background-image:linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%), url('img/top-news-pic.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -401,12 +426,9 @@ p {
 	color: #fff;
 }
 
-.top-news {
-	display: inline-block;
-	vertical-align: top;
+.topnews-list {
 	width: 370px;
-	margin-left: -4.5px;
-	background-color: #fff;
+	float: right;
 }
 
 .top-news-item {
@@ -473,14 +495,13 @@ li {
 	width: 33%;
 }
 
-.footer-about
-.title-logo {
+.footer-logo {
+  display: inline-block;
+	width: 121px;
+	height: 40px;
 	margin-left: 100px;
-}
-
-.footer-about
-.title-logo a {
-	color: #fff;
+	background-image: url('img/footer-logo.png');
+	background-repeat: no-repeat;
 }
 
 .footer-about
@@ -514,6 +535,32 @@ li {
 	margin-left: 20px;
 }
 
+.footer-soc-btn:first-child {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+.fb {
+	background-image: url('img/fb-logo.png');
+	background-repeat: no-repeat;
+}
+
+.vk {
+	background-image: url('img/vk-logo.png');
+	background-repeat: no-repeat;
+}
+
+.tw {
+	background-image: url('img/tw-logo.png');
+	background-repeat: no-repeat;
+}
+
+.inst {
+	background-image: url('img/inst-logo.png');
+	background-repeat: no-repeat;
+}
+
 .contacts-list {
 	display: inline-block;
 	text-align: left;
@@ -530,9 +577,18 @@ a {
 	color: #fff;
 }
 
-.contacts-list
-img {
-	margin-right: 20px;
+.phone-icon {
+	padding-left: 40px;
+	background-image: url('img/call-answer.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.envelope-icon {
+	padding-left: 40px;
+	background-image: url('img/envelope.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .footer-container:after {
