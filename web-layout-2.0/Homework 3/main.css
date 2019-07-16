@@ -1,0 +1,280 @@
+.todays-news-column {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 250px;
+
+	margin-right: 15px;
+
+	background-color: #fff;
+}
+
+.title-block {
+	padding: 24px 18px;
+
+	border-bottom: 2px solid #f9f9f9;
+}
+
+.title-block-link {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.todays-news-item {
+	padding: 28px 20px 0 18px;
+}
+
+.todays-news-item-link {
+	display: inline-block;
+
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0.3px;
+	line-height: 20px;
+}
+
+.footer-thread-item {
+	width: 195px;
+
+	margin-top: 18px;
+	margin-bottom: -5px;
+
+	font-size: 12px;
+	text-align: right;
+}
+
+.footer-thread-item-link {
+	float: left;
+
+	color: #91919f;
+}
+
+.footer-thread-item-time {
+	margin-right: 25px;
+
+	padding-left: 14px;
+
+	background-image: url('img/clock.png');
+	background-repeat: no-repeat;
+	background-size: 12px;
+}
+
+.comment-counter {
+	float: right;
+
+	padding-left: 14px;
+
+	background-image: url('img/chat.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.all-news-btn {
+	display: inline-block;
+	text-align: center;
+
+	width: 178px;
+	height: 43px;
+
+	margin: 43px 0 25px 37px;
+
+	border: 2px solid #448ccb;
+	border-radius: 23px;
+
+	font-size: 14px;
+	line-height: 43px;
+	color: #448ccb;
+
+	background-color: inherit;
+
+	cursor: pointer;
+}
+
+.main-news {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 461px;
+	margin-right: 15px;
+
+}
+
+.title-news {
+	padding: 110px 30px 42px 22px;
+
+	color: #fff;
+
+	background-image:linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%), url('img/title-photo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title-thread {
+	font-size: 12px;
+}
+
+.title-topic {
+	margin-top: 20px;
+	margin-left: -3px;
+
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+.title-news-footer {
+	margin-top: 20px;
+}
+.title-news-time {
+	font-size: 12px;
+}
+
+.title-news-time
+.time-icon {
+	padding-left: 12px;
+
+	background-image: url('img/clock-2.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: 8px;
+}
+
+.block-news {
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+}
+
+.block-news:after {
+	display: inline-block;
+	width: 100%;
+	content:'';
+}
+
+.other-news {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.other-news-img {
+	width: 220px;
+	height: 140px;
+}
+
+.other-news-title {
+	width: 200px;
+
+	margin-top: 5px;
+
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.other-news
+.footer-thread-item {
+	width: 170px;
+
+	margin-top: 16px;
+}
+
+.other-news
+.footer-thread-item-time {
+	margin-right: 10px;
+}
+
+.top-news {
+	display: inline-block;
+	vertical-align: top;
+
+	background-color: #fff;
+}
+
+.topnews-title {
+	float: right;
+
+	width: 412px;
+
+	padding: 26px 20px;
+}
+
+.title-top-news {
+	display: inline-block;
+	float: left;
+
+	width: 588px;
+
+	padding: 103px 82px 25px 22px;
+
+	color: #fff;
+
+	background-image:linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%), url('img/top-news-pic.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title-top-news
+.title-topic {
+	width:  410px;
+
+	margin-top: 25px;
+}
+
+.title-top-news-footer {
+	margin-top: 10px;
+}
+
+.title-top-news-time {
+	font-size: 12px;
+}
+
+.title-top-news
+.time-icon {
+	padding-left: 11px;
+
+	background-image: url('img/clock-2.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: 10px;
+}
+
+.title-top-news-text {
+	margin-top: 25px;
+
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+}
+
+.topnews-list {
+	float: right;
+
+	width: 410px;
+}
+
+.top-news-item {
+	margin-bottom: 15px;
+	padding: 23px 20px 0 18px;
+}
+
+.top-news-item-link {
+	display: inline-block;
+
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 22px;
+}
+
+.top-news-item
+.footer-thread-item {
+	width: 160px;
+}
+
+.topnews-list li:last-child {
+	margin-top: -15px;
+}

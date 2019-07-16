@@ -1,0 +1,13 @@
+
+.ad-banner {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 250px;
+
+	margin-bottom: 6px;
+}
+
+.ad-banner-img {
+	padding-bottom: 16px;
+}

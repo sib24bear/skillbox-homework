@@ -4,22 +4,30 @@
     <meta charset="utf-8">
     <title>Новостное агенство</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="aside.css">
+    <link rel="stylesheet" href="footer.css">
+<!--<link rel="stylesheet" href="footer.css"> -->
   </head>
   <body>
     <header>
       <div class="top-bar">
         <div class="fixed-container">
-          <h1>Самые
-            <a href="#">свежие новости</a> в реальном времени
+          <h1 class="fresh-news">Самые
+            <a class="link-fresh-news" href="#">свежие новости</a> в реальном времени
           </h1>
 
-          <time datetime="2019-06-19T12:30">12.30 19.06.2019</time>
+          <time class="top-bar-time" datetime="2019-06-19T12:30">12.30 19.06.2019</time>
         </div>
       </div>
 
-      <div class="fixed-container">
-        <a class="title-logo" href="#"></a>
+      <div class="fixed-container header-element">
+        <a class="title-logo" href="#">
+          <img src="img/nav-logo.png" alt="globe-logo">
+        </a>
 
         <a class="change-locate" href="#">Москва</a>
 
@@ -29,48 +37,48 @@
 
         <span class="weather">+22 &#8451;</span>
 
-        <form id="searchForm" method="get" action="https://echo.htmlacademy.ru" enctype="text/plain" target="_blank">
+        <form class="searchForm" id="searchForm" method="get" action="https://echo.htmlacademy.ru" enctype="text/plain" target="_blank">
           <input class="search-field" name="searchToSite" type="search" placeholder="Поиск по сайту">
 
-          <input class="search-btn" name="cursorPosition" type="submit" form="searchForm" aria-label="Поиск по сайту">
+          <input class="search-btn" type="submit" form="searchForm" aria-label="Поиск по сайту">
         </form>
       </div>
 
       <nav class="fixed-container">
-        <ul class="head-menu-item">
-          <li>
+        <ul class="head-menu-list">
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Главная</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Политика</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Общество</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Экономика</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#"> В мире</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Проишествия</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Спорт</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Наука</a>
           </li>
 
-          <li>
+          <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Туризм</a>
           </li>
         </ul>
@@ -81,21 +89,21 @@
       <div class="fixed-container">
         <section class="todays-news-column">
           <h2 class="title-block">
-            <a href="#">Новости дня</a>
+            <a class="title-block-link" href="#">Новости дня</a>
           </h2>
 
           <ul class="news-list">
             <li>
               <article class="todays-news-item">
                 <h3>
-                  <a href="#">Кот Ахилл предсказал победу российской сборной
+                  <a class="todays-news-item-link" href="#">Кот Ахилл предсказал победу российской сборной
                   над Египтом на ЧМ-2018</a>
                 </h3>
 
                 <footer class="footer-thread-item">
-                  <a href="#">/ ЧМ по футболу</a>
+                  <a class="footer-thread-item-link" href="#">/ ЧМ по футболу</a>
 
-                  <time datetime="2019-06-19T10:48">10:48</time>
+                  <time class="footer-thread-item-time" datetime="2019-06-19T10:48">10:48</time>
 
                   <span class="comment-counter">15</span>
                 </footer>
@@ -105,14 +113,14 @@
             <li>
               <article class="todays-news-item">
                 <h3>
-                  <a href="#">«Нафтогаз»: суд разрешил заморозить
+                  <a class="todays-news-item-link" href="#">«Нафтогаз»: суд разрешил заморозить
                   активы «Газпрома» в Великобритании</a>
                 </h3>
 
                 <footer class="footer-thread-item">
-                  <a href="#">/ Политика</a>
+                  <a class="footer-thread-item-link" href="#">/ Политика</a>
 
-                  <time datetime="2019-06-19T10:48">10:48</time>
+                  <time class="footer-thread-item-time" datetime="2019-06-19T10:48">10:48</time>
 
                   <span class="comment-counter">15</span>
                 </footer>
@@ -122,30 +130,14 @@
             <li>
               <article class="todays-news-item">
                 <h3>
-                  <a href="#">Минтранс предписал оборудовать общественный
+                  <a class="todays-news-item-link" href="#">Минтранс предписал оборудовать общественный
                     транспорт кондиционерами</a>
                 </h3>
 
                 <footer class="footer-thread-item">
-                  <a href="#">/ Транспорт</a>
+                  <a class="footer-thread-item-link" href="#">/ Транспорт</a>
 
-                  <time datetime="2019-06-19T10:48">10:48</time>
-
-                  <span class="comment-counter">15</span>
-                </footer>
-              </article>
-            </li>
-
-            <li>
-              <article class="todays-news-item">
-                <h3>
-                  <a href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
-                </h3>
-
-                <footer class="footer-thread-item">
-                  <a href="#">/ Погода</a>
-
-                  <time datetime="2019-06-19T10:48">10:48</time>
+                  <time class="footer-thread-item-time" datetime="2019-06-19T10:48">10:48</time>
 
                   <span class="comment-counter">15</span>
                 </footer>
@@ -155,13 +147,13 @@
             <li>
               <article class="todays-news-item">
                 <h3>
-                  <a href="#">Комплексное благоустройство Щелковского шоссе завершится в июне</a>
+                  <a class="todays-news-item-link" href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
                 </h3>
 
                 <footer class="footer-thread-item">
-                  <a href="#">/ Транспорт</a>
+                  <a class="footer-thread-item-link" href="#">/ Погода</a>
 
-                  <time datetime="2019-06-19T10:48">10:48</time>
+                  <time class="footer-thread-item-time" datetime="2019-06-19T10:48">10:48</time>
 
                   <span class="comment-counter">15</span>
                 </footer>
@@ -171,13 +163,29 @@
             <li>
               <article class="todays-news-item">
                 <h3>
-                  <a href="#">В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</a>
+                  <a class="todays-news-item-link" href="#">Комплексное благоустройство Щелковского шоссе завершится в июне</a>
                 </h3>
 
                 <footer class="footer-thread-item">
-                  <a href="#">/ ЧМ по футболу</a>
+                  <a class="footer-thread-item-link" href="#">/ Транспорт</a>
 
-                  <time datetime="2019-06-19T10:48">10:48</time>
+                  <time class="footer-thread-item-time" datetime="2019-06-19T10:48">10:48</time>
+
+                  <span class="comment-counter">15</span>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="todays-news-item">
+                <h3>
+                  <a class="todays-news-item-link" href="#">В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</a>
+                </h3>
+
+                <footer  class="footer-thread-item">
+                  <a class="footer-thread-item-link" href="#">/ ЧМ по футболу</a>
+
+                  <time class="footer-thread-item-time" datetime="2019-06-19T10:48">10:48</time>
 
                   <span class="comment-counter">15</span>
                 </footer>
@@ -195,14 +203,14 @@
               <header>
                 <a class="title-thread" href="#">/ Политика</a>
 
-                <h3>
-                  <a class="title-topic" href="#">В Крыму отреагировали на слова Кравчука
+                <h3 class="title-topic">
+                  <a class="title-topic-link" href="#">В Крыму отреагировали на слова Кравчука
                     о возврате полуострова</a>
                 </h3>
               </header>
 
-              <footer>
-                <time datetime="2019-06-19T12:30">19 Июня 2018
+              <footer class="title-news-footer">
+                <time class="title-news-time" datetime="2019-06-19T12:30">19 Июня 2018
                   <span class="time-icon">10:48</span>
                 </time>
               </footer>
@@ -211,22 +219,22 @@
           <div class="block-news">
             <article class="other-news">
               <figure>
-                <a href="">
-                  <img src="img/news-pic-1.jpg" alt="фото А. Навального">
+                <a href="#">
+                  <img class="other-news-img" src="img/news-pic-1.jpg" alt="фото А. Навального">
                 </a>
 
                 <figcaption>
-                  <h3>
-                    <a href="#">Алексей Навальный объявил
+                  <h3 class="other-news-title">
+                    <a  href="#">Алексей Навальный объявил
                     акцию против пенсионной реформы 1 июля</a>
                   </h3>
                 </figcaption>
               </figure>
 
               <footer class="footer-thread-item">
-                <a href="#">/ Политика</a>
+                <a class="footer-thread-item-link" href="#">/ Политика</a>
 
-                <time datetime="2019-06-19T10:48">10:48</time>
+                <time class="footer-thread-item-time" datetime="2019-06-19T10:48">10:48</time>
 
                 <span class="comment-counter">15</span>
               </footer>
@@ -235,11 +243,11 @@
             <article class="other-news">
               <figure>
                 <a href="#">
-                  <img src="img/news-pic-2.jpg" alt="загранпаспорт">
+                  <img class="other-news-img" src="img/news-pic-2.jpg" alt="загранпаспорт">
                 </a>
 
                 <figcaption>
-                  <h3>
+                  <h3 class="other-news-title">
                     <a href="#">Дума увеличила пошлины за выдачу
                       загранпаспортов и водительских прав</a>
                   </h3>
@@ -247,9 +255,9 @@
               </figure>
 
               <footer class="footer-thread-item">
-                <a href="#">/ Общество</a>
+                <a class="footer-thread-item-link" href="#">/ Общество</a>
 
-                <time datetime="2019-06-19T12:33">12:33</time>
+                <time class="footer-thread-item-time" datetime="2019-06-19T12:33">12:33</time>
 
                 <span class="comment-counter">36</span>
               </footer>
@@ -258,20 +266,20 @@
             <article class="other-news">
               <figure>
                 <a href="#">
-                  <img src="img/news-pic-3.jpg" alt="девушка в наушниках">
+                  <img class="other-news-img" src="img/news-pic-3.jpg" alt="девушка в наушниках">
                 </a>
 
                 <figcaption>
-                  <h3>
+                  <h3 class="other-news-title">
                     <a href="#">В России заработал стриминговый сервис YouTube</a>
                   </h3>
                 </figcaption>
               </figure>
 
               <footer class="footer-thread-item">
-                <a href="#">/ Интернет</a>
+                <a class="footer-thread-item-link" href="#">/ Интернет</a>
 
-                <time datetime="2019-06-19T11:17">11:17</time>
+                <time class="footer-thread-item-time" datetime="2019-06-19T11:17">11:17</time>
 
                 <span class="comment-counter">10</span>
               </footer>
@@ -284,16 +292,16 @@
                 </a>
 
                 <figcaption>
-                  <h3>
-                    <a href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис — Англия</a>
+                  <h3 class="other-news-title">
+                    <a href="#">Кейн признан лучшим игроком матча ЧМ-2018 Тунис-Англия</a>
                   </h3>
                 </figcaption>
               </figure>
 
               <footer class="footer-thread-item">
-                <a href="#">/ ЧМ по футболу</a>
+                <a class="footer-thread-item-link" href="#">/ ЧМ по футболу</a>
 
-                <time datetime="2019-06-19T11:39">11:39</time>
+                <time class="footer-thread-item-time" datetime="2019-06-19T11:39">11:39</time>
 
                 <span class="comment-counter">25</span>
               </footer>
@@ -303,11 +311,11 @@
 
         <aside class="ad-banner">
           <a href="#">
-            <img src="img/banner-1.jpg" alt="рекламный баннер">
+            <img class="ad-banner-img" src="img/banner-1.jpg" alt="рекламный баннер">
           </a>
 
           <a href="#">
-            <img src="img/banner-2.jpg" alt="рекламный баннер">
+            <img class="ad-banner-img" src="img/banner-2.jpg" alt="рекламный баннер">
           </a>
         </aside>
 
@@ -315,25 +323,25 @@
 
         <section class="top-news">
           <h2 class="title-block topnews-title">
-            <a href="#">Самые читаемые новости</a>
+            <a class="title-block-link" href="#">Самые читаемые новости</a>
           </h2>
 
           <article class="title-top-news">
               <header>
                 <a class="title-thread" href="#">/ Политика</a>
 
-                <h3>
-                  <a class="title-topic" href="#">Пекин обвинил Вашингтон
+                <h3 class="title-topic">
+                  <a href="#">Пекин обвинил Вашингтон
                     в развязывании торговой войны</a>
                 </h3>
               </header>
 
-              <footer>
-                <time datetime="2019-06-19T12:30">19 Июня 2018
+              <footer class="title-top-news-footer">
+                <time class="title-top-news-time" datetime="2019-06-19T12:30">19 Июня 2018
                   <span class="time-icon">10:48</span>
                 </time>
 
-                <p> Министерство коммерции Китая заявило, что Пекин примет
+                <p class="title-top-news-text"> Министерство коммерции Китая заявило, что Пекин примет
                   «качественные» и «количественные» меры, если президент
                   США Дональд Трамп введет дополнительные пошлины
                   на китайские товары</p>
@@ -343,31 +351,15 @@
           <ul class="news-list topnews-list">
             <li>
               <article class="top-news-item">
-                <h3>
+                <h3 class="top-news-item-link">
                   <a href="#">В Турции пообещали найти альтернативу из-за
                     отказа США поставить F-35</a>
                 </h3>
 
                 <footer class="footer-thread-item">
-                  <a href="#">/ Политика</a>
+                  <a class="footer-thread-item-link" href="#">/ Политика</a>
 
-                  <time datetime="2019-06-19T11:39">11:39</time>
-
-                  <span class="comment-counter">25</span>
-                </footer>
-              </article>
-            </li>
-
-            <li>
-              <article class="top-news-item">
-                <h3>
-                  <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
-                </h3>
-
-                <footer class="footer-thread-item">
-                  <a href="#">/ Политика</a>
-
-                  <time datetime="2019-06-19T11:39">11:39</time>
+                  <time class="footer-thread-item-time" datetime="2019-06-19T11:39">11:39</time>
 
                   <span class="comment-counter">25</span>
                 </footer>
@@ -376,14 +368,30 @@
 
             <li>
               <article class="top-news-item">
-                <h3>
+                <h3 class="top-news-item-link">
                   <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
                 </h3>
 
                 <footer class="footer-thread-item">
-                  <a href="#">/ Политика</a>
+                  <a class="footer-thread-item-link" href="#">/ Политика</a>
 
-                  <time datetime="2019-06-19T11:39">11:39</time>
+                  <time class="footer-thread-item-time" datetime="2019-06-19T11:39">11:39</time>
+
+                  <span class="comment-counter">25</span>
+                </footer>
+              </article>
+            </li>
+
+            <li>
+              <article class="top-news-item">
+                <h3 class="top-news-item-link">
+                  <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
+                </h3>
+
+                <footer class="footer-thread-item">
+                  <a class="footer-thread-item-link" href="#">/ Политика</a>
+
+                  <time class="footer-thread-item-time" datetime="2019-06-19T11:39">11:39</time>
 
                   <span class="comment-counter">25</span>
                 </footer>
@@ -398,85 +406,87 @@
       <div class="fixed-container footer-container">
         <nav class="footer-nav">
           <ul class="footer-menu-item">
-            <li>
-              <a class="footer-nav-btn" href="#">Главная</a>
+            <li class="footer-nav-btn">
+              <a href="#">Главная</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#">Политика</a>
+            <li class="footer-nav-btn">
+              <a href="#">Путешествия</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#">Общество</a>
+            <li class="footer-nav-btn">
+              <a href="#">Политика</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#">Экономика</a>
+            <li class="footer-nav-btn">
+              <a href="#">Спорт</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#"> В мире</a>
+            <li class="footer-nav-btn">
+              <a href="#">Общество</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#">Проишествия</a>
+            <li class="footer-nav-btn">
+              <a href="#">Наука</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#">Спорт</a>
+            <li class="footer-nav-btn">
+              <a href="#">Экономика</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#">Наука</a>
+            <li class="footer-nav-btn">
+              <a href="#">Туризм</a>
             </li>
 
-            <li>
-              <a class="footer-nav-btn" href="#">Туризм</a>
+            <li class="footer-nav-btn">
+              <a href="#">В мире</a>
             </li>
           </ul>
         </nav>
 
         <div class="footer-about">
-            <a class="footer-logo" href="#"></a>
+          <a class="footer-logo" href="#">
+            <img src="img/footer-logo.png" alt="globe-logo">
+          </a>
 
             <ul class="footer-menu-item">
-                <li>
-                  <a class="footer-nav-btn" href="#">Об агенстве</a>
+                <li class="footer-nav-btn">
+                  <a href="#">Об агенстве</a>
                 </li>
 
-                <li>
-                  <a class="footer-nav-btn" href="#">Контакты</a>
+                <li class="footer-nav-btn">
+                  <a href="#">Контакты</a>
                 </li>
 
-                <li>
-                  <a class="footer-nav-btn" href="#">Опубликовать новость</a>
+                <li class="footer-nav-btn">
+                  <a href="#">Опубликовать новость</a>
                 </li>
               </ul>
           </div>
 
         <div class="footer-contacts">
             <ul class="footer-social-item">
-                <li>
+                <li class="footer-social-item-element">
                   <a class="footer-soc-btn vk" href="https://www.vk.com" aria-label="VK"></a>
                 </li>
 
-                <li>
+                <li class="footer-social-item-element">
                   <a class="footer-soc-btn fb" href="https://www.facebook.com" aria-label="Facebook"></a>
                 </li>
 
-                <li>
+                <li class="footer-social-item-element">
                   <a class="footer-soc-btn tw" href="https://www.twitter.com" aria-label="Twitter"></a>
                 </li>
 
-                <li>
+                <li class="footer-social-item-element">
                   <a class="footer-soc-btn inst" href="https://www.instagram.com" aria-label="Instagram"></a>
                 </li>
               </ul>
 
               <div class="contacts-list">
-                <a class="phone-icon" href="tel:+74999955555">+7 (499) 995-55-55</a>
+                <a class="contacts-list-item phone-icon" href="tel:+74999955555">+7 (499) 995-55-55</a>
 
-                <a class="envelope-icon" href="mailto:info@agency.ru">info@agency.ru</a>
+                <a class="contacts-list-item envelope-icon" href="mailto:info@agency.ru">info@agency.ru</a>
               </div>
           </div>
       </div>
