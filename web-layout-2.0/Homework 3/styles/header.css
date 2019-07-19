@@ -1,6 +1,7 @@
 .top-bar {
-	padding: 21px 0;
+	padding: 18px 0;
 
+	line-height: 20px;
 	color: #fff;
 	background-color: #00122f;
 }
@@ -21,7 +22,9 @@
 }
 
 .header-element {
+	height: 45px;
 	margin-top: 40px;
+	overflow-y: auto;
 }
 
 .title-logo {
@@ -54,7 +57,7 @@
 
 	margin-left: 10px;
 
-	background-image: url('img/down-arrow.png');
+	background-image: url('../img/down-arrow.png');
 	background-repeat: no-repeat;
 }
 
@@ -72,7 +75,7 @@
 	margin-left: 20px;
 	padding-left: 20px;
 
-	background-image: url('img/clock.png');
+	background-image: url('../img/clock.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -85,7 +88,7 @@
 	padding-top: 14px;
 	padding-left: 35px;
 
-	background-image: url('img/cloudy.png');
+	background-image: url('../img/cloudy.png');
 	background-repeat: no-repeat;
 	background-position:left bottom;
 }
@@ -122,28 +125,44 @@
 	color: #ebebeb;
 
 	background-color: #ebebeb;
-	background-image: url('img/search.png');
+	background-image: url('../img/search.png');
 	background-repeat: no-repeat;
 
 	cursor: pointer;
 }
 
+.nav-head-menu {
+	margin-top: 22px;
+	margin-bottom: 32px;
+}
+
 .head-menu-list {
-	margin: 35px 0;
+	padding-top: 10px;
+
+	font-size: 0px;
 }
 
 .head-menu-item {
    display: inline-block;
+
+	 margin-right: 15px;
+
+	 font-size: 16px;
 	 letter-spacing: -0.35px;
 	 line-height: 1;
 }
 
-.head-menu-list
-li + li::before {
+.head-menu-item::after {
 	content: '/';
-	margin: 0 14.5px;
+
+	margin-left: 18px;
+
 	font-size: 20px;
 	color: #91919f;
+}
+
+.head-menu-item:last-child::after {
+	display: none;
 }
 
 .head-nav-btn:hover {

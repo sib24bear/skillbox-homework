@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <title>Новостное агенство</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="aside.css">
-    <link rel="stylesheet" href="footer.css">
-<!--<link rel="stylesheet" href="footer.css"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/footer.css">
   </head>
   <body>
     <header>
@@ -44,7 +43,7 @@
         </form>
       </div>
 
-      <nav class="fixed-container">
+      <nav class="fixed-container nav-head-menu">
         <ul class="head-menu-list">
           <li class="head-menu-item">
             <a class="head-nav-btn" href="#">Главная</a>
@@ -93,7 +92,7 @@
           </h2>
 
           <ul class="news-list">
-            <li>
+            <li class="news-list-element">
               <article class="todays-news-item">
                 <h3>
                   <a class="todays-news-item-link" href="#">Кот Ахилл предсказал победу российской сборной
@@ -110,11 +109,10 @@
               </article>
             </li>
 
-            <li>
+            <li class="news-list-element">
               <article class="todays-news-item">
                 <h3>
-                  <a class="todays-news-item-link" href="#">«Нафтогаз»: суд разрешил заморозить
-                  активы «Газпрома» в Великобритании</a>
+                  <a class="todays-news-item-link" href="#">«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в Великобритании</a>
                 </h3>
 
                 <footer class="footer-thread-item">
@@ -127,11 +125,10 @@
               </article>
             </li>
 
-            <li>
+            <li class="news-list-element">
               <article class="todays-news-item">
                 <h3>
-                  <a class="todays-news-item-link" href="#">Минтранс предписал оборудовать общественный
-                    транспорт кондиционерами</a>
+                  <a class="todays-news-item-link" href="#">Минтранс предписал оборудовать общественный транспорт кондиционерами</a>
                 </h3>
 
                 <footer class="footer-thread-item">
@@ -144,10 +141,10 @@
               </article>
             </li>
 
-            <li>
+            <li class="news-list-element">
               <article class="todays-news-item">
                 <h3>
-                  <a class="todays-news-item-link" href="#">Летние кафе Москвы временно закроются из-за непогоды</a>
+                  <a class="todays-news-item-link" href="#">Летние кафе Москвы временно&nbsp;закроются из-за непогоды</a>
                 </h3>
 
                 <footer class="footer-thread-item">
@@ -160,7 +157,7 @@
               </article>
             </li>
 
-            <li>
+            <li class="news-list-element">
               <article class="todays-news-item">
                 <h3>
                   <a class="todays-news-item-link" href="#">Комплексное благоустройство Щелковского шоссе завершится в июне</a>
@@ -176,7 +173,7 @@
               </article>
             </li>
 
-            <li>
+            <li class="news-list-element">
               <article class="todays-news-item">
                 <h3>
                   <a class="todays-news-item-link" href="#">В Москве назвали самое популярное мороженое у болельщиков ЧМ-2018</a>
@@ -201,12 +198,18 @@
 
           <article class="title-news">
               <header>
-                <a class="title-thread" href="#">/ Политика</a>
+                <figure>
+                  <img class="title-news-img" src="img/title-photo.jpg" alt="фото Крым, Замок">
 
-                <h3 class="title-topic">
-                  <a class="title-topic-link" href="#">В Крыму отреагировали на слова Кравчука
-                    о возврате полуострова</a>
-                </h3>
+                  <figcaption class="title-news-topic">
+                    <a class="title-thread" href="#">/ Политика</a>
+
+                    <h3 class="title-topic">
+                      <a class="title-topic-link" href="#">В Крыму отреагировали на слова Кравчука
+                        о возврате полуострова</a>
+                    </h3>
+                  </figcaption>
+                </figure>
               </header>
 
               <footer class="title-news-footer">
@@ -310,11 +313,11 @@
         </section>
 
         <aside class="ad-banner">
-          <a href="#">
+          <a class="ad-banner-link" href="#">
             <img class="ad-banner-img" src="img/banner-1.jpg" alt="рекламный баннер">
           </a>
 
-          <a href="#">
+          <a class="ad-banner-link" href="#">
             <img class="ad-banner-img" src="img/banner-2.jpg" alt="рекламный баннер">
           </a>
         </aside>
@@ -328,12 +331,18 @@
 
           <article class="title-top-news">
               <header>
-                <a class="title-thread" href="#">/ Политика</a>
+                <figure>
+                  <img class="title-top-news-img" src="img/top-news-pic.jpg" alt="фото грузовой автомобиль">
 
-                <h3 class="title-topic">
-                  <a href="#">Пекин обвинил Вашингтон
-                    в развязывании торговой войны</a>
-                </h3>
+                  <figcaption class="title-top-news-topic">
+                    <a class="title-thread" href="#">/ Политика</a>
+
+                    <h3 class="title-topic">
+                      <a class="title-topic-link" href="#">Пекин обвинил Вашингтон
+                        в развязывании торговой войны</a>
+                    </h3>
+                  </figcaption>
+                </figure>
               </header>
 
               <footer class="title-top-news-footer">
@@ -349,7 +358,7 @@
           </article>
 
           <ul class="news-list topnews-list">
-            <li>
+            <li class="topnews-list-element">
               <article class="top-news-item">
                 <h3 class="top-news-item-link">
                   <a href="#">В Турции пообещали найти альтернативу из-за
@@ -366,7 +375,7 @@
               </article>
             </li>
 
-            <li>
+            <li class="topnews-list-element">
               <article class="top-news-item">
                 <h3 class="top-news-item-link">
                   <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>
@@ -382,7 +391,7 @@
               </article>
             </li>
 
-            <li>
+            <li class="topnews-list-element">
               <article class="top-news-item">
                 <h3 class="top-news-item-link">
                   <a href="#">Назван минимальный доход для причисления к среднему классу‍</a>

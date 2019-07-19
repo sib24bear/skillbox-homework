@@ -15,19 +15,23 @@ html {
 
 body {
 	min-width: 320px; /*задает минимальный размер страницы*/
+
 	margin: 0; /*обнуляет margin*/
-	background-color: #fff; /*задает цвет фона*/
+
 	font-family: "Arial", sans-serif; /*задает шрифт и семейство шрифтов для всей страницы*/
 	font-size: 16px; /*задает размер шрифта для всей страницы*/
 	line-height: 0.8; /*задает межстрочный интервал для всей страницы*/
 	letter-spacing: -0.32px; /*задает ширину символов для всей страницы*/
 	color: #000; /*задает основной цвет текста на странице*/
+
+	background-color: #fff; /*задает цвет фона*/
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
 	margin: 0; /*обнуляет margin в заголовках*/
 }
 
@@ -60,7 +64,8 @@ form, input {
 
 main {
 	padding-top: 22px;
-	padding-bottom: 61px;
+	padding-bottom: 60px;
+
 	background-color: #f9f9f9;
 	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 1%)
 }
@@ -73,4 +78,5 @@ main {
 	position: relative;
 	width: 1000px;
 	margin: 0 auto;
+	overflow: hidden;
 }

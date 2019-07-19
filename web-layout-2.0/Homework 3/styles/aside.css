@@ -1,0 +1,20 @@
+
+.ad-banner {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 250px;
+	height: 845px;
+
+	overflow-y: hidden;
+}
+
+.ad-banner-link {
+	display: inline-block;
+
+	margin-top: 18px;
+}
+
+.ad-banner-link:first-child {
+	margin-top: 0px;
+}

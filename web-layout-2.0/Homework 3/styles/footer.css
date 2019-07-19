@@ -1,14 +1,8 @@
 .site-footer {
-	padding-top: 57px;
+	padding-top: 56px;
 
 	color: #fff;
 	background-color: #00122f;
-}
-
-.footer-container {
-	text-align: justify;
-
-	margin-bottom: 20px;
 }
 
 .footer-nav {
@@ -16,7 +10,7 @@
 	vertical-align: top;
 	text-align: left;
 
-	width: 33%;
+	width: 280px;
 }
 
 .footer-nav-btn {
@@ -37,10 +31,10 @@
 	display: inline-block;
 	vertical-align: top;
 
-	width: 33%;
+	width: 230px;
 
-	padding-top: 2px;
-	padding-left: 102px;
+	margin-left: 151px;
+	padding-top: 3px;
 }
 
 .footer-logo {
@@ -60,8 +54,9 @@
 .footer-contacts {
 	display: inline-block;
 	vertical-align: top;
+	float: right;
 
-	width: 33%;
+	width: 226px;
 }
 
 .footer-social-item {
@@ -74,7 +69,11 @@
 	display: inline-block;
 	vertical-align: top;
 
-	margin-left: 20px;
+	margin-left: 21px;
+}
+
+.footer-social-item-element:first-child {
+	margin: 0;
 }
 
 .footer-soc-btn {
@@ -85,22 +84,22 @@
 }
 
 .fb {
-	background-image: url('img/fb-logo.png');
+	background-image: url('../img/fb-logo.png');
 	background-repeat: no-repeat;
 }
 
 .vk {
-	background-image: url('img/vk-logo.png');
+	background-image: url('../img/vk-logo.png');
 	background-repeat: no-repeat;
 }
 
 .tw {
-	background-image: url('img/tw-logo.png');
+	background-image: url('../img/tw-logo.png');
 	background-repeat: no-repeat;
 }
 
 .inst {
-	background-image: url('img/inst-logo.png');
+	background-image: url('../img/inst-logo.png');
 	background-repeat: no-repeat;
 }
 
@@ -109,7 +108,7 @@
 	text-align: left;
 
 	margin-top: 45px;
-	padding-left: 111px;
+	padding-left: 2px;
 }
 
 .contacts-list-item {
@@ -124,7 +123,7 @@
 .phone-icon {
 	padding-left: 30px;
 
-	background-image: url('img/call-answer.png');
+	background-image: url('../img/call-answer.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -132,21 +131,16 @@
 .envelope-icon {
 	padding-left: 30px;
 
-	background-image: url('img/envelope.png');
+	background-image: url('../img/envelope.png');
 	background-repeat: no-repeat;
 	background-size: 14px;
-}
-
-.footer-container:after {
-	display: inline-block;
-	width: 100%;
-	content:'';
 }
 
 .copyright {
 	text-align: center;
 
-	padding: 8px 0;
+	margin-top: 34px;
+	padding: 22px 0;
 
 	font-size: 14px;
 	letter-spacing: -0.25px;
