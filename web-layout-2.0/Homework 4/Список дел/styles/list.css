@@ -1,0 +1,21 @@
+.to-do-list {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 470px;
+
+	margin-right: 20px;
+}
+
+.to-do-list-title {
+	margin-bottom: 30px;
+
+	font-size: 21px;
+}
+
+.list-empty {
+	padding-top: 48px;
+
+	font-size: 16px;
+	color: #8993ad;
+}

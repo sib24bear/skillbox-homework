@@ -1,0 +1,80 @@
+.note-item {
+	display: block;
+
+	margin-bottom: 18px;
+
+	word-wrap: break-word;
+
+	background-color: #fff;
+}
+
+.note-item-title {
+	display: inline-block;
+	position: relative;
+
+	width: 100%;
+
+	padding: 18px 19px;
+
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.title-item {
+	display: inline-block;
+
+	font-size: 16px;
+}
+
+.close-btn {
+	display: inline-block;
+	vertical-align: middle;
+
+	width: 9px;
+	height: 9px;
+
+	margin-left: 19px;
+
+	cursor: pointer;
+
+	background-color: inherit;
+	background-image: url('../img/clear-button.png');
+	background-repeat: no-repeat;
+}
+
+.expand-btn {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+
+	width: 6px;
+	height: 5px;
+
+	cursor: pointer;
+
+	background-color: inherit;
+	background-image: url('../img/arrow.png');
+	background-repeat: no-repeat;
+
+	transition: transform 0.2s ease;
+}
+
+.rotate {
+	transform: rotate(-90deg);
+}
+
+.note-item-description {
+	display: inline-block;
+
+	width: 100%;
+	min-height: 85px;
+
+	padding: 7px 20px 20px;
+}
+
+.description-item {
+	display: inline-block;
+
+	word-wrap: break-word;
+	font-size: 14px;
+	color: #8993ad;
+}

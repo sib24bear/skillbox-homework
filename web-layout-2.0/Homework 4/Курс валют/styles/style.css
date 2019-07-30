@@ -1,0 +1,82 @@
+html {
+	box-sizing: border-box;
+	/*изменяет алгоритм расчета размера блока,
+	чтобы свойства width и height задавали размеры не содержимого,
+	 а размеры блока.*/
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	/*все элементы, а так же псевдо элементы наследуют
+	значение свойства box-sizing*/
+}
+
+body {
+	min-width: 320px; /*задает минимальный размер страницы*/
+
+	margin: 0; /*обнуляет margin*/
+
+	font-family: "Arial", sans-serif; /*задает шрифт и семейство шрифтов для всей страницы*/
+	font-size: 16px; /*задает размер шрифта для всей страницы*/
+	line-height: 0.8; /*задает межстрочный интервал для всей страницы*/
+	letter-spacing: -0.32px; /*задает ширину символов для всей страницы*/
+	color: #000; /*задает основной цвет текста на странице*/
+
+	background-color: #fff; /*задает цвет фона*/
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0; /*обнуляет margin в заголовках*/
+}
+
+img{
+	max-width: 100%; /*задает размер изображений по ширине*/
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	margin: 0; /*обнуляет margin в списках*/
+	padding: 0;
+}
+
+li {
+	list-style-type: none; /* убирает декоративный элемент списка*/
+}
+
+figure{
+	margin: 0;
+}
+
+form, input {
+	outline: none;
+	border: none;
+}
+
+main {
+	padding-top: 22px;
+	padding-bottom: 60px;
+
+	background-color: #f9f9f9;
+	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 1%)
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.fixed-container {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}

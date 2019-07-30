@@ -1,0 +1,150 @@
+.site-footer {
+	padding-top: 56px;
+
+	color: #fff;
+	background-color: #00122f;
+}
+
+.footer-nav {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+
+	width: 280px;
+}
+
+.footer-nav-btn {
+   display: inline-block;
+	 vertical-align: top;
+
+	 width: 135px;
+
+	 margin-bottom: 16px;
+	 line-height: 1;
+}
+
+.footer-nav-btn:hover {
+	color: #448ccb;
+}
+
+.footer-about {
+	display: inline-block;
+	vertical-align: top;
+
+	width: 230px;
+
+	margin-left: 151px;
+	padding-top: 3px;
+}
+
+.footer-logo {
+  display: inline-block;
+
+	width: 121px;
+	height: 40px;
+
+	margin-bottom: 22px;
+}
+
+.footer-about
+.footer-nav-btn {
+	width: 200px;
+}
+
+.footer-contacts {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+
+	width: 226px;
+}
+
+.footer-social-item {
+	text-align: right;
+
+	font-size: 0;
+}
+
+.footer-social-item-element {
+	display: inline-block;
+	vertical-align: top;
+
+	margin-left: 21px;
+}
+
+.footer-social-item-element:first-child {
+	margin: 0;
+}
+
+.footer-soc-btn {
+	display: inline-block;
+
+	width: 40px;
+	height: 40px;
+}
+
+.fb {
+	background-image: url('../img/fb-logo.png');
+	background-repeat: no-repeat;
+}
+
+.vk {
+	background-image: url('../img/vk-logo.png');
+	background-repeat: no-repeat;
+}
+
+.tw {
+	background-image: url('../img/tw-logo.png');
+	background-repeat: no-repeat;
+}
+
+.inst {
+	background-image: url('../img/inst-logo.png');
+	background-repeat: no-repeat;
+}
+
+.contacts-list {
+	display: inline-block;
+	text-align: left;
+
+	margin-top: 45px;
+	padding-left: 2px;
+}
+
+.contacts-list-item {
+	display: inline-block;
+
+	margin-bottom: 29px;
+
+	font-size: 18px;
+
+}
+
+.phone-icon {
+	padding-left: 30px;
+
+	background-image: url('../img/call-answer.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.envelope-icon {
+	padding-left: 30px;
+
+	background-image: url('../img/envelope.png');
+	background-repeat: no-repeat;
+	background-size: 14px;
+}
+
+.copyright {
+	text-align: center;
+
+	margin-top: 34px;
+	padding: 22px 0;
+
+	font-size: 14px;
+	letter-spacing: -0.25px;
+
+	border-top: 1px solid #26354e;
+	color: #fff;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/note.css">
+    <script src="js/jquery-3.4.1.min.js" defer></script>
+    <script src="js/common.js" defer></script>
+  </head>
+
+  <body>
+    <div class="fixed-container">
+      <section class="to-do-list">
+        <h1 class="to-do-list-title">Список дел:</h1>
+
+        <p class="list-empty" id="list-empty">Список пуст...</p>
+
+        <ul class="list-item"></ul>
+      </section>
+
+      <form class="new-note" id="newNote" method="post" action="" enctype="multipart/form-data">
+        <fieldset form="newNote">
+          <legend>Добавить новое дело</legend>
+
+          <ul class="note-list">
+            <li class="note-list-item">
+              <label class="title-input" for="titleNote">Название</label>
+              <input class="title-note" id="titleNote" name="titleNote" type="text" maxlength="25" required>
+            </li>
+
+            <li class="note-list-item">
+              <label class="title-input" for="description">Описание</label>
+              <textarea class="description" id="description" name="description" required></textarea>
+            </li>
+
+            <li class="note-list-item">
+              <button class="submit-btn" type="submit">Добавить дело</button>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
