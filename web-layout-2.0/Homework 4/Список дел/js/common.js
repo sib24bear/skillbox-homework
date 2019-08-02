@@ -1,10 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
   function initialState() {
     if (localStorage.getItem('notes') == null) {
       $('#list-empty').show();
     } else {
       $('.list-item').html(localStorage.getItem('notes'));
+
       $('#list-empty').hide();
     }
   }
@@ -13,10 +14,11 @@ $(document).ready(function(){
 
   function addToStorage() {
 		let notesList = $('.list-item').html();
-		localStorage.setItem('notes', notesList);
+
+    localStorage.setItem('notes', notesList);
 	}
 
-  $('#newNote').submit(function (e) {
+  $('#newNote').submit(function disableFormSending(e) {
     e.preventDefault();
   });
 
@@ -33,11 +35,11 @@ $(document).ready(function(){
         <li class="note-item">
           <article>
             <header class="note-item-title">
-              <h2 class="title-item">${name}</h2>
+              <h3 class="title-item">${name}</h3>
 
-              <button class="close-btn" type="button" name="CloseButton"></button>
+              <button class="close-btn" type="button" name="CloseButton" aria-label="Закрыть заметку"></button>
 
-              <button class="expand-btn" type="button" name="expandButton"></button>
+              <button class="expand-btn" type="button" name="expandButton" aria-label="Скрыть описание"></button>
             </header>
 
             <footer class="note-item-description">
@@ -62,9 +64,9 @@ $(document).ready(function(){
     }
   }
 
-  $('.fixed-container').on('click', '.submit-btn', addNewNote);
+  $('#newNote').on('submit', addNewNote);
 
-  $('.list-item').on('click', '.close-btn', function() {
+  $('.list-item').on('click', '.close-btn', function closeNote() {
       let noteItem = $(this).parents('.note-item');
 
       noteItem.remove();
@@ -80,7 +82,7 @@ $(document).ready(function(){
   		}
     });
 
-  $('.list-item').on('click', '.expand-btn', function () {
-     $(this).toggleClass('rotate').parents('.note-item').find('footer').slideToggle(200);
-   });
+  $('.list-item').on('click', '.expand-btn', function expandFooter() {
+     $(this).toggleClass('rotate').parents('.note-item').find('.note-item-description').toggleClass('expand-footer');
+     });
 });

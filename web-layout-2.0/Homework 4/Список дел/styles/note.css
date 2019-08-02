@@ -29,8 +29,8 @@
 	display: inline-block;
 	vertical-align: middle;
 
-	width: 9px;
-	height: 9px;
+	width: 16px;
+	height: 16px;
 
 	margin-left: 19px;
 
@@ -39,23 +39,25 @@
 	background-color: inherit;
 	background-image: url('../img/clear-button.png');
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .expand-btn {
-	position: absolute;
-	right: 25px;
-	top: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
 
-	width: 6px;
-	height: 5px;
+	width: 16px;
+	height: 16px;
 
 	cursor: pointer;
 
 	background-color: inherit;
 	background-image: url('../img/arrow.png');
 	background-repeat: no-repeat;
+	background-position: center;
 
-	transition: transform 0.2s ease;
+	transition: transform 2.5s ease;
 }
 
 .rotate {
@@ -63,18 +65,26 @@
 }
 
 .note-item-description {
-	display: inline-block;
-
 	width: 100%;
-	min-height: 85px;
+	height: 85px;
 
 	padding: 7px 20px 20px;
+
+	font-size: 14px;
+
+	transition: height 2s, padding 2s, font-size 2s ease;
+}
+
+.expand-footer {
+	height: 0;
+	padding: 0 20px;
+	font-size: 0;
 }
 
 .description-item {
 	display: inline-block;
 
 	word-wrap: break-word;
-	font-size: 14px;
+	font-size: inherit;
 	color: #8993ad;
 }

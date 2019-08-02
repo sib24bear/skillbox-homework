@@ -22,10 +22,46 @@
 	line-height: 1;
 }
 
+.exchange-rates {
+	margin-top: 5px;
+	padding: 0 18px 5px;
+
+	border-bottom: 2px solid #f9f9f9;
+
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+
+	color: #91919f;
+}
+
+.exchange-USD,
+.exchange-EUR {
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.exchange-USD::before {
+	content: '$';
+
+	margin-right: 5px;
+
+	color: #448ccb;
+}
+
+.exchange-EUR::before {
+	content: '\20AC';
+
+	margin-right: 5px;
+
+	color: #448ccb;
+}
+
 .news-list {
 	width: 100%;
 
-	margin: 28px 0;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	padding-right: 20px;
 
 	font-size: 0;

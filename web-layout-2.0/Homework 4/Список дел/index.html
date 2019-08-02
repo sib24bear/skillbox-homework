@@ -22,27 +22,19 @@
         <ul class="list-item"></ul>
       </section>
 
-      <form class="new-note" id="newNote" method="post" action="" enctype="multipart/form-data">
-        <fieldset form="newNote">
-          <legend>Добавить новое дело</legend>
+      <section class="new-note">
+        <h2 class="form-title">Добавить новое дело</h2>
 
-          <ul class="note-list">
-            <li class="note-list-item">
-              <label class="title-input" for="titleNote">Название</label>
-              <input class="title-note" id="titleNote" name="titleNote" type="text" maxlength="25" required>
-            </li>
+        <form class="form-note" id="newNote" method="post" action="#">
+          <label class="title-input" for="titleNote">Название</label>
+          <input class="title-note" id="titleNote" name="titleNote" type="text" maxlength="24" required>
 
-            <li class="note-list-item">
-              <label class="title-input" for="description">Описание</label>
-              <textarea class="description" id="description" name="description" required></textarea>
-            </li>
+          <label class="title-input" for="description">Описание</label>
+          <textarea class="description" id="description" name="description" required></textarea>
 
-            <li class="note-list-item">
-              <button class="submit-btn" type="submit">Добавить дело</button>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
+          <button class="submit-btn" type="submit">Добавить дело</button>
+        </form>
+      </section>
     </div>
   </body>
 </html>
