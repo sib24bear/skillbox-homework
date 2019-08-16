@@ -9,8 +9,6 @@ html {
 }
 
 body {
-	min-width: 320px;
-
 	margin: 0;
 	padding: 0;
 
@@ -48,19 +46,12 @@ textarea,
 button {
 	margin: 0;
 	padding: 0;
-	outline: none;
+	outline-color: #2174fd;
 	border: none;
 }
 .fixed-container {
-	position: relative;
-
 	width: 960px;
-	height: 100vh;
 
 	margin: 0 auto;
 	padding-top: 62px;
-}
-
-.new-note-empty {
-	border: 1px solid red !important;
 }

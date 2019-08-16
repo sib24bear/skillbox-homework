@@ -1,88 +1,94 @@
 $(document).ready(function() {
+  let titleNoteEL = $('#titleNote'),
+      descriptionEL = $('#description'),
+      listItemEL = $('#listItem'),
+      listEmptyEL = $('#listEmpty'),
+      newNoteEL = $('#newNote');
 
-  function initialState() {
-    if (localStorage.getItem('notes') == null) {
-      $('#list-empty').show();
+  function emptyMessageToggle(showListEmpty) {
+    if (showListEmpty) {
+      listEmptyEL.show(true);
     } else {
-      $('.list-item').html(localStorage.getItem('notes'));
-
-      $('#list-empty').hide();
+      listEmptyEL.hide(false);
     }
   }
 
-  initialState();
+  if (localStorage.getItem('notes') == null) {
+    emptyMessageToggle(true);
+  } else {
+    listItemEL.html(localStorage.getItem('notes'));;
+    emptyMessageToggle();
+  }
 
-  function addToStorage() {
-		let notesList = $('.list-item').html();
-
-    localStorage.setItem('notes', notesList);
+  function addNoteToLocalStorage(noteItemMarkup = listItemEL.html()) {
+    localStorage.setItem('notes', noteItemMarkup);
 	}
 
-  $('#newNote').submit(function disableFormSending(e) {
-    e.preventDefault();
-  });
+  function verifyRequiredFields(verifyTrue) {
+    if (verifyTrue) {
+      titleNoteEL.addClass('js-newNoteEmpty').prop('required', true);
 
-	function addNewNote() {
-    let name = $('#titleNote').val(),
-				text = $('#description').val().replace(/(.{32})/g, "$1\n");
-
-    if (name.length !== 0 && text.length !== 0) {
-      $('#titleNote').removeClass('new-note-empty');
-
-      $('#description').removeClass('new-note-empty');
-
-      $('.list-item').append(`
-        <li class="note-item">
-          <article>
-            <header class="note-item-title">
-              <h3 class="title-item">${name}</h3>
-
-              <button class="close-btn" type="button" name="CloseButton" aria-label="Закрыть заметку"></button>
-
-              <button class="expand-btn" type="button" name="expandButton" aria-label="Скрыть описание"></button>
-            </header>
-
-            <footer class="note-item-description">
-              <p class="description-item">${text}</p>
-            </footer>
-          </article>
-        </li>
-      `);
-
-      $('#titleNote').val(''),
-
-      $('#description').val(''),
-
-      $('#list-empty').hide();
-
-      addToStorage();
-
+      descriptionEL.addClass('js-newNoteEmpty').prop('required', true);
     } else {
-        $('#titleNote').addClass('new-note-empty');
+      titleNoteEL.removeClass('js-newNoteEmpty').prop('required', false);
 
-        $('#description').addClass('new-note-empty');
+      descriptionEL.removeClass('js-newNoteEmpty').prop('required', false);
     }
   }
 
-  $('#newNote').on('submit', addNewNote);
+  function getToDoItem(
+    title = titleNoteEL.val(),
+    text = descriptionEL.val().replace(/(.{32})/g, "$1\n")) {
+      return [ '<li class="note-item"><article><header class="note-item-title"><h3 class="title-item">',
+                title,
+                '</h3><button class="close-btn" type="button" name="CloseButton" aria-label="Закрыть заметку"></button><button class="expand-btn" type="button" name="expandButton" aria-label="Скрыть описание"></button></header><footer class="note-item-description"><p class="description-item">',
+                text,
+                '</p></footer></article></li>'].join('')
+  }
 
-  $('.list-item').on('click', '.close-btn', function closeNote() {
-      let noteItem = $(this).parents('.note-item');
+	function addNewNote() {
+    let title = titleNoteEL.val(),
+        text = descriptionEL.val();
 
-      noteItem.remove();
+    if (title.length !== 0 && text.length !== 0) {
+      verifyRequiredFields();
 
-      let noteList = $('.note-item');
+      listItemEL.append(getToDoItem(title, text));
 
-      addToStorage();
+      newNoteEL[0].reset();
 
-      if (noteList.length == 0) {
-  			$('#list-empty').show();
+      emptyMessageToggle();
 
+      addNoteToLocalStorage();
+
+    } else {
+      verifyRequiredFields(true);
+    }
+  }
+
+  newNoteEL.submit(function disableFormSending(e) {
+    e.preventDefault();
+    addNewNote();
+    });
+
+  listItemEL.on('click', '.close-btn', function closeNote() {
+
+      $(this).parents('.note-item')
+      .remove();
+
+      addNoteToLocalStorage();
+
+      if ($('.note-item').length == 0) {
+  			emptyMessageToggle(true);
         localStorage.removeItem('notes');
   		}
     });
 
-  $('.list-item').on('click', '.expand-btn', function expandFooter() {
-     $(this).toggleClass('rotate').parents('.note-item').find('.note-item-description').toggleClass('expand-footer');
+  listItemEL.on('click', '.expand-btn', function expandNoteFooter() {
+     $(this).toggleClass('js-rotate')
+     .attr('aria-label', $(this).attr('aria-label') == 'Скрыть описание' ? "Развернуть описание" : "Скрыть описание")
+     .parents('.note-item')
+     .find('.note-item-description')
+     .toggleClass('js-expandFooter');
      });
 });
