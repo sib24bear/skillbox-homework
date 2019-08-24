@@ -1,0 +1,167 @@
+.top-bar {
+	padding: 18px 0;
+
+	line-height: 20px;
+	color: #fff;
+	background-color: #00122f;
+}
+
+.top-bar-element{
+	display: flex;
+	justify-content: space-between;
+}
+
+.link-fresh-news {
+  border-bottom: 1px solid #fff;
+}
+
+.fresh-news {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.header-element {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	margin-top: 40px;
+}
+
+.title-logo {
+  display: inline-block;
+
+	width: 121px;
+	height: 40px;
+}
+
+.change-locate {
+	display: inline-block;
+	vertical-align: top;
+
+	margin-left: 55px;
+	padding: 14px 0px 4px 0;
+
+	border-bottom: 2px dashed #448ccb;
+
+	color: #448ccb;
+}
+
+.change-locate::after {
+	content: "";
+
+	display: inline-block;
+	vertical-align: middle;
+
+	width: 9px;
+	height: 6px;
+
+	margin-left: 10px;
+
+	background-image: url('../img/down-arrow.png');
+	background-repeat: no-repeat;
+}
+
+.date-time {
+	display: inline-block;
+	vertical-align: top;
+
+	margin-left: 45px;
+	padding-top: 14px;
+
+	color: #91919f;
+}
+
+.time-icon {
+	margin-left: 20px;
+	padding-left: 20px;
+
+	background-image: url('../img/clock.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.weather {
+	display: inline-block;
+	vertical-align: top;
+
+	margin-left: 45px;
+	padding-top: 14px;
+	padding-left: 35px;
+
+	background-image: url('../img/cloudy.png');
+	background-repeat: no-repeat;
+	background-position:left bottom;
+}
+
+.searchForm {
+	position: relative;
+}
+
+.search-field {
+	width: 320px;
+	height: 45px;
+
+	padding-left: 22px;
+	padding-right: 35px;
+	border-radius: 22.5px;
+
+	font-size: 14px;
+	letter-spacing: -0.35px;
+
+	background-color: #ebebeb;
+}
+
+.search-btn {
+	position: absolute;
+	right: 14px;
+	top: 15px;
+
+	width: 16px;
+	height: 16px;
+
+	background-color: #ebebeb;
+	background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+}
+
+.nav-head-menu {
+	margin-top: 22px;
+	margin-bottom: 32px;
+}
+
+.head-menu-list {
+	padding-top: 10px;
+
+	font-size: 0px;
+}
+
+.head-menu-item {
+   display: inline-block;
+
+	 margin-right: 15px;
+
+	 font-size: 16px;
+	 letter-spacing: -0.35px;
+	 line-height: 1;
+}
+
+.head-menu-item::after {
+	content: '/';
+
+	margin-left: 18px;
+
+	font-size: 20px;
+	color: #91919f;
+}
+
+.head-menu-item:last-child::after {
+	display: none;
+}
+
+.head-nav-btn:hover {
+	color: #448ccb;
+}

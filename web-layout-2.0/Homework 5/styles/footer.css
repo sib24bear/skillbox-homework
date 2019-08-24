@@ -1,0 +1,156 @@
+.site-footer {
+	padding-top: 56px;
+
+	color: #fff;
+	background-color: #00122f;
+}
+
+.footer-container{
+	display: flex;
+	justify-content:
+
+}
+
+.footer-nav {
+	min-width: 33%;
+}
+
+.footer-menu-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-nav-btn {
+	min-width: 42%;
+
+	margin-bottom: 16px;
+	line-height: 1;
+}
+
+.footer-nav-btn:hover {
+	color: #448ccb;
+}
+
+.footer-nav-btn:last-child {
+	margin-bottom: 0;
+}
+
+.footer-about {
+	display: flex;
+	flex-direction: column;
+
+	min-width: 33%;
+
+	padding-top: 3px;
+	padding-left: 9.6%;
+}
+
+.footer-logo {
+	width: 121px;
+	height: 40px;
+
+	margin-bottom: 22px;
+}
+
+.footer-about
+.footer-menu-item {
+	flex-direction: column;
+}
+
+.footer-contacts {
+	display: flex;
+	flex-direction: column;
+
+	min-width: 33%;
+}
+
+.footer-social-item {
+	text-align: right;
+
+	font-size: 0;
+}
+
+.footer-social-item-element {
+	display: inline-block;
+	vertical-align: top;
+
+	margin-left: 21px;
+}
+
+.footer-social-item-element:first-child {
+	margin: 0;
+}
+
+.footer-soc-btn {
+	display: inline-block;
+
+	width: 40px;
+	height: 40px;
+}
+
+.fb {
+	background-image: url('../img/fb-logo.png');
+	background-repeat: no-repeat;
+}
+
+.vk {
+	background-image: url('../img/vk-logo.png');
+	background-repeat: no-repeat;
+}
+
+.tw {
+	background-image: url('../img/tw-logo.png');
+	background-repeat: no-repeat;
+}
+
+.inst {
+	background-image: url('../img/inst-logo.png');
+	background-repeat: no-repeat;
+}
+
+.contacts-list {
+	text-align: left;
+
+	margin-top: 45px;
+	margin-bottom: 30px;
+	padding-left: 33%;
+}
+
+.contacts-list-item {
+	display: inline-block;
+
+	margin-bottom: 29px;
+
+	font-size: 18px;
+
+}
+
+.phone-icon {
+	padding-left: 30px;
+
+	background-image: url('../img/call-answer.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.envelope-icon {
+	margin-bottom: 0;
+	padding-left: 30px;
+
+	background-image: url('../img/envelope.png');
+	background-repeat: no-repeat;
+	background-size: 14px;
+}
+
+.copyright {
+	text-align: center;
+
+	margin-top: 33px;
+	padding: 21px 0;
+
+	font-size: 14px;
+	letter-spacing: -0.25px;
+
+	border-top: 1px solid #26354e;
+	color: #fff;
+}

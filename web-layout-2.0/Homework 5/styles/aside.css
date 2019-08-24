@@ -1,0 +1,15 @@
+
+.ad-banner {
+	display: flex;
+	flex-direction: column;
+
+	max-width: 250px;
+}
+
+.ad-banner-link {
+	margin-top: 18px;
+}
+
+.ad-banner-link:first-child {
+	margin-top: 0px;
+}

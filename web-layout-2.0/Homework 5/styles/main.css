@@ -1,0 +1,351 @@
+.main-content{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.todays-news-column {
+	max-width: 250px;
+
+	padding-bottom: 25px;
+
+	background-color: #fff;
+}
+
+.title-block {
+	padding: 24px 18px;
+
+	border-bottom: 2px solid #f9f9f9;
+}
+
+.title-block-link {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.exchange-rates {
+	margin-top: 5px;
+	padding: 0 18px 5px;
+
+	border-bottom: 2px solid #f9f9f9;
+
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+
+	color: #91919f;
+}
+
+.exchange-USD,
+.exchange-EUR {
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.exchange-USD::before {
+	content: '$';
+
+	margin-right: 5px;
+
+	color: #448ccb;
+}
+
+.exchange-EUR::before {
+	content: '\20AC';
+
+	margin-right: 5px;
+
+	color: #448ccb;
+}
+
+.news-list {
+	margin-top: 10px;
+	margin-bottom: 20px;
+
+	font-size: 0;
+}
+
+.news-list-element {
+	width: 250px;
+
+	margin-bottom: 24px;
+}
+
+.news-list-element:last-child {
+	margin-bottom: 0;
+}
+
+.todays-news-item {
+	padding: 0 18px;
+}
+
+.todays-news-item-link {
+	display: inline-block;
+
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0.3px;
+	line-height: 20px;
+}
+
+.footer-thread-item {
+	display: flex;
+	justify-content: flex-end;
+
+	margin-top: 15px;
+	padding-right: 15px;
+
+	font-size: 12px;
+	text-align: right;
+	line-height: 12px;
+}
+
+.footer-thread-item-link {
+	flex-grow: 1;
+	text-align: left;
+	color: #91919f;
+}
+
+.footer-thread-item-time {
+	margin-right: 23px;
+
+	padding-left: 14px;
+
+	background-image: url('../img/clock.png');
+	background-repeat: no-repeat;
+	background-size: 12px;
+}
+
+.comment-counter {
+	padding-left: 14px;
+
+	background-image: url('../img/chat.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.all-news-btn {
+	display: inline-block;
+	text-align: center;
+
+	width: 178px;
+	height: 43px;
+
+	margin-top: 8px;
+	margin-left: 37px;
+
+	border: 2px solid #448ccb;
+	border-radius: 23px;
+
+	font-size: 14px;
+	line-height: 43px;
+	color: #448ccb;
+
+	background-color: inherit;
+
+	cursor: pointer;
+}
+
+.main-news {
+	max-width: 460px;
+}
+
+.title-news {
+	padding-bottom: 40px;
+
+	color: #fff;
+	background-color: #00122f;
+
+	overflow: hidden;
+}
+
+.title-news-topic {
+	margin-top: -212px;
+	margin-left: 22px;
+}
+
+.title-thread {
+	display: block;
+	font-size: 12px;
+}
+
+.title-topic {
+	display: inline-block;
+
+	margin-top: 20px;
+	margin-left: -3px;
+
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+.title-topic-link{
+	display: inline-block;
+}
+
+.title-news-footer {
+	margin-top: 22px;
+	margin-left: 22px;
+}
+.title-news-time {
+	font-size: 12px;
+}
+
+.title-news-time
+.time-icon {
+	padding-left: 12px;
+
+	background-image: url('../img/clock-2.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: 8px;
+}
+
+.block-news {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	width: 100%;
+}
+
+.other-news {
+	text-align: left;
+
+	padding-top: 20px;
+}
+
+.other-news-img {
+	width: 220px;
+	height: 140px;
+}
+
+.other-news-title {
+	width: 200px;
+
+	margin-top: 5px;
+
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.other-news
+.footer-thread-item {
+	width: 180px;
+
+	margin-top: 16px;
+}
+
+.other-news
+.footer-thread-item-time {
+	margin-right: 8px;
+}
+
+.top-news {
+	display: grid;
+  grid-template-areas:
+		"article h2"
+		"article ul";
+  grid-template-columns: 2fr 1.4fr;
+  grid-template-rows: 75px 1fr;
+
+	margin-top: 20px;
+
+	background-color: #fff;
+
+	overflow: hidden;
+}
+
+.topnews-title {
+	grid-area: h2;
+
+	padding: 26px 20px;
+}
+
+.title-top-news {
+	grid-area: article;
+
+	padding-bottom: 42px;
+
+	color: #fff;
+  background-color: #00122f;
+
+	overflow: hidden;
+}
+
+.title-top-news-topic {
+	margin-top: -288px;
+	margin-left: 22px;
+}
+
+.title-top-news
+.title-topic {
+	padding-right: 150px;
+	margin-top: 25px;
+}
+
+.title-top-news-footer {
+	padding-top: 8px;
+	padding-left: 22px;
+}
+
+.title-top-news-time {
+	font-size: 12px;
+}
+
+.title-top-news
+.time-icon {
+	padding-left: 11px;
+
+	background-image: url('../img/clock-2.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: 10px;
+}
+
+.title-top-news-text {
+	margin-top: 25px;
+	padding-right: 20px;
+
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+}
+
+.topnews-list {
+	grid-area: ul;
+
+	margin-top: 22px;
+	padding-bottom: 20px;
+
+	font-size: 0;
+}
+
+.topnews-list-element {
+	margin-bottom: 30px;
+}
+
+.topnews-list-element:last-child {
+	margin-bottom: 0;
+}
+
+.top-news-item {
+	padding: 0 18px;
+}
+
+.top-news-item-link {
+	display: inline-block;
+
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 22px;
+}
+
+.top-news-item
+.footer-thread-item {
+	width: 170px;
+}
