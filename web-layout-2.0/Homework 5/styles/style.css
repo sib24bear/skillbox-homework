@@ -57,7 +57,7 @@ figure{
 	margin: 0;
 }
 
-form, input {
+form, input, button {
 	outline: none;
 	border: none;
 }
@@ -72,6 +72,11 @@ main {
 
 .visually-hidden {
 	display: none;
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
 }
 
 .fixed-container {

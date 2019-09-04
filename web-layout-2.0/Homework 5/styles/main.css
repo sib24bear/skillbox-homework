@@ -6,7 +6,10 @@
 }
 
 .todays-news-column {
-	max-width: 250px;
+	display: flex;
+	flex-direction: column;
+
+	min-width: 250px;
 
 	padding-bottom: 25px;
 
@@ -129,12 +132,12 @@
 .all-news-btn {
 	display: inline-block;
 	text-align: center;
+	align-self: center;
 
 	width: 178px;
 	height: 43px;
 
 	margin-top: 8px;
-	margin-left: 37px;
 
 	border: 2px solid #448ccb;
 	border-radius: 23px;
@@ -149,7 +152,7 @@
 }
 
 .main-news {
-	max-width: 460px;
+	width: 460px;
 }
 
 .title-news {
@@ -213,7 +216,7 @@
 }
 
 .other-news {
-	text-align: left;
+	text-align: center;
 
 	padding-top: 20px;
 }
@@ -228,6 +231,7 @@
 
 	margin-top: 5px;
 
+	text-align: left;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 20px;

@@ -1,0 +1,180 @@
+@media (max-width: 425.9px) {
+  main {
+    padding: 0;
+  }
+
+  .fixed-container {
+    padding: 0;
+  }
+
+  .fresh-news {
+  	font-size: 12px;
+  }
+
+  .header-element-bar{
+    padding: 15px 25px;
+  }
+
+  .header-element {
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding: 0 25px;
+    padding-top: 25px;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.0) 15px);
+  }
+
+  .title-logo,
+  .change-locate {
+     display: none;
+  }
+
+  .date-time {
+    margin: 0;
+  }
+
+  .time-icon {
+    margin-left: 0;
+  }
+
+  .weather {
+    margin-left: 0;
+  }
+
+  .nav-head-menu {
+    padding: 0 25px;
+  }
+
+  .main-news {
+    order: -1;
+
+    padding: 0;
+  }
+
+  .title-news-img {
+    max-width: 150%;
+
+    margin-left: -8%;
+  }
+
+  .title-news-topic {
+    margin-top: -190px;
+    margin-left: 0;
+    padding: 0 25px;
+  }
+
+  .title-topic {
+    margin-left: 0;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .title-news-footer {
+    margin-left: 25px;
+  }
+
+  .block-news {
+    padding-bottom: 50px;
+  }
+
+  .other-news {
+    width: 100%;
+
+    padding-top: 30px;
+  }
+
+  .other-news-img {
+    min-width: 320px;
+    height: auto;
+  }
+
+  .other-news-title {
+    width: auto;
+    padding: 0 25px;
+  }
+
+  .other-news
+  .footer-thread-item {
+    margin-left: 25px;
+  }
+
+  .todays-news-column {
+    max-width: 100%;
+
+    padding: 25px;
+    padding-bottom: 50px;
+  }
+
+  .title-block {
+    padding: 23px 0;
+  }
+
+  .exchange-rates {
+    padding: 0 0 5px;
+  }
+
+  .news-list-element {
+    width: auto;
+  }
+
+  .todays-news-item {
+  	padding: 0;
+  }
+
+  .all-news-btn {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+  .ad-banner {
+    padding: 50px 25px;
+
+    overflow-x: auto;
+  }
+
+  .title-top-news-text {
+    display: none;
+  }
+
+  .title-top-news-img {
+    max-width: 150%;
+
+    margin-left: -160px;
+  }
+  .site-footer {
+    padding: 25px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #26354e;
+  }
+
+  .footer-nav-btn {
+    width: 42%;
+    margin-bottom: 20px;
+  }
+
+  .copyright {
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .title-news-img {
+    margin-left: -44%;
+  }
+
+  .ad-banner-link{
+    min-width: 100%
+  }
+}

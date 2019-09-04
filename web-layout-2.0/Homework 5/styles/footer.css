@@ -109,8 +109,9 @@
 }
 
 .contacts-list {
-	text-align: left;
-
+	display: flex;
+	flex-direction: column;
+	
 	margin-top: 45px;
 	margin-bottom: 30px;
 	padding-left: 33%;
