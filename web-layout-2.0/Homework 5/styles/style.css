@@ -62,14 +62,6 @@ form, input, button {
 	border: none;
 }
 
-main {
-	padding-top: 22px;
-	padding-bottom: 60px;
-
-	background-color: #f9f9f9;
-	background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 1%)
-}
-
 .visually-hidden {
 	display: none;
 }

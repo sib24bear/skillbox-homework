@@ -1,5 +1,5 @@
 @media (max-width: 425.9px) {
-  main {
+  .main-block {
     padding: 0;
   }
 
@@ -139,9 +139,8 @@
 
   .title-top-news-img {
     max-width: 150%;
-
-    margin-left: -160px;
   }
+  
   .site-footer {
     padding: 25px;
   }
