@@ -1,0 +1,53 @@
+.feedback-button {
+  padding: 1.17em 4em;
+
+  font-size: 18px;
+  color: #fff;
+
+  background-color: #ff4e2e;
+  border: none;
+}
+
+.feedback-button_skills {
+  padding: 1.15em 3.2em;
+}
+
+.feedback-button_projects {
+  padding: 1.21em 3.6em;
+}
+
+@media (max-width: 1199.9px) {
+  .feedback-button_promo {
+    padding: 1.38em 5.36em;
+  }
+
+  .feedback-button_skills {
+    padding: 1.4em 4.65em;
+  }
+
+  .feedback-button_projects {
+    padding: 1.41em 5em;
+  }
+}
+
+@media (max-width: 1023.9px) {
+  .feedback-button {
+    width: 100%;
+    max-width: 280px;
+
+    font-size: 16px;
+  }
+
+  .feedback-button_promo {
+    padding: 1.22em 0;
+    box-shadow: 0 0 15px #ffffff4f;
+  }
+
+  .feedback-button_skills {
+    padding: 1.2em 0;
+  }
+
+  .feedback-button_projects {
+    padding: 1.21em 0;
+  }
+}

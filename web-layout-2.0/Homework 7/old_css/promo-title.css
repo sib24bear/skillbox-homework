@@ -1,0 +1,42 @@
+.promo-title__text {
+  display: block;
+
+  font-size: 80px;
+  font-weight: 900;
+
+  color: #1f1f24;
+}
+
+.promo-title__description {
+  font-size: 25px;
+  font-weight: 400;
+
+  color: #8993ad;
+}
+
+@media (max-width: 1199.9px) {
+  .promo-title {
+    font-size: 59px;
+  }
+
+  .promo-title__text {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 1023.9px) {
+  .promo-title {
+    font-size: 24px;
+  }
+
+  .promo-title__text {
+    margin-bottom: 7px;
+
+    font-size: 30px;
+  }
+
+  .promo-title__description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

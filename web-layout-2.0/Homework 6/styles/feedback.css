@@ -1,0 +1,18 @@
+.feedback {
+  display: flex;
+}
+
+.feedback_header {
+  align-items: center;
+}
+
+.feedback_footer {
+  flex-direction: column;
+}
+
+@media (max-width: 1023.9px) {
+  .feedback_header {
+    flex-grow: 2;
+    justify-content: space-between;
+  }
+}

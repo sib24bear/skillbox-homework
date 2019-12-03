@@ -1,0 +1,41 @@
+.control-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0;
+  z-index: 1200;
+
+  @include tablet_1200 {
+    display: none
+  }
+}
+
+.control-arrow__item {
+  display: block;
+}
+
+.control-arrow__btn{
+  width: 60px;
+  height: 60px;
+
+  padding: 0;
+
+  background-color: $primary_bg-color;
+
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.control-arrow__btn_left {
+  background-image: url("../image/left-arrow@2x.png");
+
+  @include bg-options(no-repeat, 14px, center);
+}
+
+.control-arrow__btn_right {
+  background-image: url("../image/right-arrow@2x.png");
+
+  @include bg-options(no-repeat, 14px, center);
+}

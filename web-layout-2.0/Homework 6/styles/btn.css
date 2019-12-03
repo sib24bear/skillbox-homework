@@ -1,0 +1,11 @@
+.btn {
+  padding: .85em 2.46em;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 1px solid #ff8f5a;
+}

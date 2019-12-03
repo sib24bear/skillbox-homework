@@ -1,0 +1,35 @@
+.projects {
+  background-color: #fbfbfb;
+  padding-bottom: 5.08em;
+}
+
+.projects__slider {
+  margin-top: 5.2em;
+  margin-bottom: 4.72em;
+}
+
+@media (max-width: 1199.9px) {
+  .projects {
+    padding-top: 4.8em;
+  }
+
+  .projects__slider {
+    margin-bottom: 4.7em;
+  }
+}
+
+@media (max-width: 1023.9px) {
+  .projects {
+    padding: 0 20px;
+    padding-top: 2.35em;
+    padding-bottom: 2.6em;
+
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .projects__slider {
+    margin-top: 2.5em;
+    margin-bottom: 2.25em;
+  }
+}

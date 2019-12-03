@@ -1,0 +1,48 @@
+.diplom {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.page {
+	min-width: 320px;
+	margin: 0;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #8993ad;
+
+	background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+
+  color: #8993ad;
+}
+
+ul {
+  margin: 0;
+
+  padding: 0;
+}
+
+.page__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 4.65em;
+  padding-bottom: 5.2em;
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
+}

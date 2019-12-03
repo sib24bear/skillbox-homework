@@ -1,0 +1,63 @@
+.contact-link {
+  font-size: 25px;
+
+  color: #000;
+}
+
+.contact-link_header {
+  font-weight: 700;
+}
+
+.contact-link::before {
+  content: '';
+  display: inline-block;
+
+  width: 22px;
+  height: 18px;
+
+  margin-right: 16px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.contact-link_type_phone {
+  margin-top: 5px;
+}
+
+.contact-link_type_phone::before {
+  background-image: url("../image/phone@2x.png");
+}
+
+.contact-link_type_email {
+  margin-top: 29px;
+}
+
+.contact-link_type_email::before {
+  background-image: url("../image/envelope@2x.png");
+}
+
+@media (max-width: 1199.9px) {
+
+}
+
+@media (max-width: 1023.9px) {
+  .contact-link {
+    font-size: 18px;
+  }
+
+  .contact-link::before {
+    width: 13px;
+    margin-right: 20px;
+  }
+
+  .contact-link_type_phone {
+    margin-top: 0;
+  }
+
+  .contact-link_type_email {
+    margin-top: 23px;
+    margin-left: 0;
+  }
+}

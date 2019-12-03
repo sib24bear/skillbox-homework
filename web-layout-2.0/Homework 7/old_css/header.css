@@ -1,0 +1,35 @@
+.header {
+  padding-top: 1.45em;
+
+  background-color: #fbfbfb;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn {
+  margin-left: 1.9em;
+}
+
+@media (max-width: 1199.9px) {
+  .header {
+    padding-top: 1.5em;
+  }
+}
+
+@media (max-width: 1023.9px) {
+  .header {
+    padding-top: 1.24em;
+  }
+
+  .header__wrapper {
+    align-items: center;
+  }
+
+  .header__feedback {
+    margin-left: 4px;
+  }
+}

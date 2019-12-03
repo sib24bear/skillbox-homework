@@ -1,0 +1,47 @@
+.control-dots {
+  display: none;
+  justify-content: center;
+
+  @include tablet_1200 {
+    display: flex;
+  }
+}
+
+.control-dots__item {
+  list-style-type: none;
+  margin: 0 15px;
+
+  @include mobile_1024 {
+    margin: 0 8px;
+  }
+}
+
+.control-dots__btn {
+  width: 18px;
+  height: 18px;
+
+  padding: 0;
+
+  border: 1px solid #ebebeb;
+  border-radius: 9px;
+  background-color: #ebebeb;
+
+  cursor: pointer;
+
+  &.active {
+    background-color: $primary-theme_color;
+    border: 1px solid $primary-theme_color;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $primary-theme_color;
+  }
+
+  @include mobile_1024 {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 5px;
+  }
+}

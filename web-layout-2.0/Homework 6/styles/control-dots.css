@@ -1,0 +1,51 @@
+.control-dots {
+  display: none;
+  justify-content: center;
+}
+
+.control-dots__item {
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+.control-dots__btn {
+  width: 18px;
+  height: 18px;
+
+  padding: 0;
+
+  border: 1px solid #ebebeb;
+  border-radius: 9px;
+  background-color: #ebebeb;
+
+  cursor: pointer;
+}
+
+.control-dots__btn.active {
+  background-color: #ff4e2e;
+  border: 1px solid #ff4e2e;
+}
+
+.control-dots__btn:focus {
+  outline: none;
+  border: 1px solid #ff4e2e;
+}
+
+@media (max-width: 1199.9px) {
+  .control-dots {
+    display: flex;
+  }
+}
+
+@media (max-width: 1023.9px) {
+  .control-dots__item {
+    margin: 0 8px;
+  }
+
+  .control-dots__btn {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 5px;
+  }
+}

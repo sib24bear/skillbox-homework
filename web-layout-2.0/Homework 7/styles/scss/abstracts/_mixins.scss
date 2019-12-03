@@ -1,0 +1,26 @@
+@mixin tablet_1200 {
+    @media (max-width: 1199.9px){
+      @content;
+    }
+}
+// @include mixins.tablet_1200 {}
+
+@mixin mobile_1024 {
+    @media (max-width: 1023.9px){
+      @content;
+    }
+}
+// @include mixins.mobile_1024 {}
+
+@mixin bg-gradient($direction, $fromColor, $toColor) {
+    background-color: $toColor;
+    background-image: linear-gradient($direction, $fromColor, $toColor);
+}
+// @include mixins.bg-gradient($gradient-angle, $primary_gradient-color, $secondary-gradient-color);
+
+@mixin bg-options($repeat, $bg-size, $bg-position) {
+    background-repeat: $repeat;
+    background-size: $bg-size;
+    background-position: $bg-position;
+}
+//@include mixins.bg-options($repeat, $bg-size, $bg-position);

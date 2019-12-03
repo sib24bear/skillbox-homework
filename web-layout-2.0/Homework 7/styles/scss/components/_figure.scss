@@ -1,0 +1,42 @@
+.figure {
+  margin: 0;
+}
+
+.figure__image {
+  max-width: 100%;
+}
+
+.figure__title {
+  margin-top: 30px;
+}
+
+.figure__text {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@include tablet_1200 {
+  .figure__title {
+    margin-top: 0.8em;
+  }
+
+  .figure__text {
+    font-size: 25px;
+  }
+}
+
+@include mobile_1024 {
+  .figure__image {
+    min-width: 100%;
+  }
+
+  .figure__title {
+    margin-top: 0.5em;
+  }
+
+  .figure__text {
+    font-size: $large-text_font-size;
+  }
+}

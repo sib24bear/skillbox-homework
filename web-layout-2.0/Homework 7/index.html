@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="diplom" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Гирев Максим - frontend-разработчик и верстальщик</title>
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-500.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-900.woff2" as="font">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <button class="btn burger-button" aria-label="Меню">
+          <span class="burger-button__line"></span>
+        </button>
+
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item_header">
+              <a class="nav__link nav__link_header" href="#skills">Услуги</a>
+            </li>
+
+            <li class="nav__item nav__item_header">
+              <a class="nav__link nav__link_header" href="#projects">Портфолио</a>
+            </li>
+
+            <li class="nav__item nav__item_header">
+              <a class="nav__link nav__link_header" href="#rate">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="feedback feedback_header header__feedback">
+          <a class="contact-link contact-link_header" href="tel:+**********">+7(499) 995-55-77</a>
+
+          <button class="btn header__btn callback-button callback-button_mobile">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="promo promo__main">
+        <div class="wrapper promo__wrapper">
+          <h1 class="title promo-title">
+            <span class="promo-title__text">Гирев Максим</span>
+
+            <strong class="promo-title__description">Frontend-разработчик и веб-верстальщик</strong>
+          </h1>
+
+          <button class="btn feedback-button feedback-button_promo promo__btn">Узнать больше</button>
+        </div>
+
+        <div class="promo__background">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    type="image/webp"
+                    srcset="https://via.placeholder.com/753x767.webp?text=753x767.webp+1x 1x,
+                            https://via.placeholder.com/1506x1534.webp?text=1506x1534.webp+2x 2x"
+            >
+
+            <source media="(min-width: 1024px)"
+                    type="image/webp"
+                    srcset="https://via.placeholder.com/450x650.webp?text=450x650.webp+1x 1x,
+                            https://via.placeholder.com/900x1300.webp?text=900x1300.webp+2x 2x"
+            >
+
+            <source type="image/webp"
+                    srcset="https://via.placeholder.com/224x334.webp?text=224x334.webp+1x 1x,
+                            https://via.placeholder.com/448x668.webp?text=448x668.webp+2x 2x"
+            >
+
+            <source media="(min-width: 1200px)"
+                    srcset="https://via.placeholder.com/753x767.png?text=753x767.png+1x 1x,
+                            https://via.placeholder.com/1506x1534.png?text=1506x1534.png+2x 2x"
+            >
+
+            <source media="(min-width: 1024px)"
+                    srcset="https://via.placeholder.com/450x650.png?text=450x650.png+1x 1x,
+                            https://via.placeholder.com/900x1300.png?text=900x1300.png+2x 2x"
+            >
+
+            <img class="promo__img"
+            src="https://via.placeholder.com/224x334.png?text=224x334.v+1x"
+            srcset="https://via.placeholder.com/448x668.png?text=448x668.png+2x 2x"
+            alt="фото">
+          </picture>
+          <div class="flying-tag wrapper">
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_1-tag">{&nbsp;}</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_2-tag">#</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_3-tag">&#60;/&#62;</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_4-tag">&#60;div&#62;</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_5-tag">&#60;div&#62;</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills page__section" id="skills">
+          <h2 class="title skills__title">Что я делаю</h2>
+
+          <ul class="skills__list wrapper skills__wrapper">
+            <li class="skills__item skills__item_icon-layout">
+              <p class="skills__text">
+                <a href="#">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</a>
+              </p>
+            </li>
+
+            <li class="skills__item skills__item_icon-adaptive">
+              <p class="skills__text">
+                <a href="#">Адаптивная вёрстка под все браузеры и&nbsp;устройства</a>
+              </p>
+            </li>
+
+            <li class="skills__item skills__item_icon-frontend">
+              <p class="skills__text">
+                <a href="#">Frontend–разработка и&nbsp;программирование</a>
+              </p>
+            </li>
+
+            <li class="skills__item skills__item_icon-correct">
+              <p class="skills__text">
+                <a href="#">Исправление и&nbsp;доработка существующей вёрстки</a>
+              </p>
+            </li>
+          </ul>
+
+          <button class="btn feedback-button feedback-button_skills">Узнать стоимость</button>
+      </section>
+
+      <section class="projects page__section" id="projects">
+        <h2 class="title">Примеры моих работ</h2>
+
+        <div class="slider projects__slider">
+          <div class="wrapper slider__wrapper">
+            <article class="slider__item">
+              <a class="slider__link" href="#">
+                <figure class="figure">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            type="image/webp"
+                            srcset="https://via.placeholder.com/370x290.webp?text=370x290.webp+1x 1x,
+                                    https://via.placeholder.com/740x580.webp?text=740x580.webp+2x 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            type="image/webp"
+                            srcset="https://via.placeholder.com/455x358.webp?text=455x358.webp+1x 1x,
+                                    https://via.placeholder.com/910x716.webp?text=910x716.webp+2x 2x"
+                    >
+
+                    <source type="image/webp"
+                            srcset="https://via.placeholder.com/282x251.webp?text=282x251.webp+1x 1x,
+                                    https://via.placeholder.com/564x502.webp?text=568x502.webp+2x 2x"
+                    >
+
+                    <source media="(min-width: 1200px)"
+                            srcset="https://via.placeholder.com/370x290.jpeg?text=370x290.jpeg+1x 1x,
+                                    https://via.placeholder.com/740x580.jpeg?text=740x580.jpeg+2x 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            srcset="https://via.placeholder.com/455x358.jpeg?text=455x358.jpeg+1x 1x,
+                                    https://via.placeholder.com/910x716.jpeg?text=910x716.jpeg+2x 2x"
+                    >
+
+                    <img class="figure__image" src="https://via.placeholder.com/282x251.jpeg?text=282x251.jpeg+1x"
+                    srcset="https://via.placeholder.com/564x502.jpeg?text=564x502.jpeg+2x 2x"
+                    alt="скриншот сайта">
+                  </picture>
+
+                  <figcaption class="figure__title">
+                    <h3 class="figure__text">Сайт психолога Веры Антоновой</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="slider__item">
+              <a class="slider__link" href="#">
+                <figure class="figure slider__content">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            type="image/webp"
+                            srcset="https://via.placeholder.com/370x290.webp?text=370x290.webp+1x 1x,
+                                    https://via.placeholder.com/740x580.webp?text=740x580.webp+2x 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            type="image/webp"
+                            srcset="https://via.placeholder.com/455x358.webp?text=455x358.webp+1x 1x,
+                                    https://via.placeholder.com/910x716.webp?text=910x716.webp+2x 2x"
+                    >
+
+                    <source type="image/webp"
+                            srcset="https://via.placeholder.com/282x251.webp?text=282x251.webp+1x 1x,
+                                    https://via.placeholder.com/564x502.webp?text=568x502.webp+2x 2x"
+                    >
+
+                    <source media="(min-width: 1200px)"
+                            srcset="https://via.placeholder.com/370x290.jpeg?text=370x290.jpeg+1x 1x,
+                                    https://via.placeholder.com/740x580.jpeg?text=740x580.jpeg+2x 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            srcset="https://via.placeholder.com/455x358.jpeg?text=455x358.jpeg+1x 1x,
+                                    https://via.placeholder.com/910x716.jpeg?text=910x716.jpeg+2x 2x"
+                    >
+
+                    <img class="figure__image"
+                    src="https://via.placeholder.com/282x251.jpeg?text=282x251.jpeg+1x"
+                    srcset="https://via.placeholder.com/564x502.jpeg?text=564x502.jpeg+2x 2x"
+                    alt="скриншот сайта">
+                  </picture>
+
+                  <figcaption class="figure__title">
+                    <h3 class="figure__text">Сайт магазина детской одежды</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="slider__item">
+              <a class="slider__link" href="#">
+                <figure class="figure slider__content">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            type="image/webp"
+                            srcset="https://via.placeholder.com/370x290.webp?text=370x290.webp+1x 1x,
+                                    https://via.placeholder.com/740x580.webp?text=740x580.webp+2x 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            type="image/webp"
+                            srcset="https://via.placeholder.com/455x358.webp?text=455x358.webp+1x 1x,
+                                    https://via.placeholder.com/910x716.webp?text=910x716.webp+2x 2x"
+                    >
+
+                    <source type="image/webp"
+                            srcset="https://via.placeholder.com/282x251.webp?text=282x251.webp+1x 1x,
+                                    https://via.placeholder.com/564x502.webp?text=568x502.webp+2x 2x"
+                    >
+
+                    <source media="(min-width: 1200px)"
+                            srcset="https://via.placeholder.com/370x290.jpeg?text=370x290.jpeg+1x 1x,
+                                    https://via.placeholder.com/740x580.jpeg?text=740x580.jpeg+2x 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            srcset="https://via.placeholder.com/455x358.jpeg?text=455x358.jpeg+1x 1x,
+                                    https://via.placeholder.com/910x716.jpeg?text=910x716.jpeg+2x 2x"
+                    >
+
+                    <img class="figure__image"
+                    src="https://via.placeholder.com/282x251.jpeg?text=282x251.jpeg+1x"
+                    srcset="https://via.placeholder.com/564x502.jpeg?text=564x502.jpeg+2x 2x"
+                    alt="скриншот сайта">
+                  </picture>
+
+                  <figcaption class="figure__title">
+                    <h3 class="figure__text">Сайт магазина «Рыболов»</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+          </div>
+
+          <ul class="control-arrow slider__control">
+            <li class="control-arrow__item">
+              <button class="control-arrow__btn control-arrow__btn_left" aria-label="слайд влево"></button>
+            </li>
+
+            <li class="control-arrow__item">
+              <button class="control-arrow__btn control-arrow__btn_right" aria-label="слайд вправо"></button>
+            </li>
+          </ul>
+
+          <ul class="control-dots slider__control">
+            <li class="control-dots__item">
+              <button class="control-dots__btn active" aria-label="слайд 1"></button>
+            </li>
+
+            <li class="control-dots__item">
+              <button class="control-dots__btn" aria-label="слайд 2"></button>
+            </li>
+
+            <li class="control-dots__item">
+              <button class="control-dots__btn" aria-label="слайд 3"></button>
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn feedback-button feedback-button_projects">Заказать проект</button>
+      </section>
+
+      <section class="rate" id="rate">
+        <div class="wrapper rate__wrapper">
+          <h2 class="title rate__title">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.</h2>
+
+          <p class="rate__text">
+            <small>Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально, в зависимости от сложности задач.</small>
+          </p>
+        </div>
+        <div class="flying-tag wrapper">
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_1-tag">{&nbsp;}</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_2-tag">#</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_3-tag">&#60;/&#62;</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_4-tag">&#60;div&#62;</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_5-tag">{&nbsp;}</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <nav class="nav footer__nav">
+          <ul class="nav__list nav__list_footer">
+            <li class="nav__item nav__item_footer">
+              <a class="nav__link nav__link_footer" href="#skills">Услуги</a>
+            </li>
+
+            <li class="nav__item nav__item_footer">
+              <a class="nav__link nav__link_footer" href="#projects">Портфолио</a>
+            </li>
+
+            <li class="nav__item nav__item_footer">
+              <a class="nav__link nav__link_footer" href="#rate">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="feedback feedback_footer footer__feedback">
+          <a class="contact-link footer__contact-link contact-link_type_phone" href="tel:+7**********">+7(***) ***-**-**</a>
+
+          <a class="contact-link footer__contact-link contact-link_type_email" href="mailto:maksim@girev.com">maksim@girev.com</a>
+        </div>
+
+        <div class="feedback feedback_footer footer__feedback">
+          <button class="btn footer__btn callback-button callback-button_footer callback-button_mobile_footer">Заказать звонок</button>
+
+          <div class="social-likes footer__social">
+            <a class="social-likes__service social-likes__service_type-vk" href="http://vk.com" aria-label="VK"></a>
+
+            <a class="social-likes__service social-likes__service_type-facebook" href="http://facebook.com" aria-label="Facebook"></a>
+
+            <a class="social-likes__service social-likes__service_type-twitter" href="http://twitter.com" aria-label="Twitter"></a>
+
+            <a class="social-likes__service social-likes__service_type-instagram" href="http://instagram.com" aria-label="Instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">&#169; Гирев Максим, 2019</p>
+      </div>
+    </footer>
+  </body>
+</html>
