@@ -1,0 +1,36 @@
+.callback-button {
+  font-size: $small-text_font-size;
+
+  color: $secondary-theme_color;
+  background-color: $primary_bg-color;
+  border: 1px solid $secondary-theme_color;
+}
+
+.callback-button_footer {
+  padding: 0.85em 4em;
+}
+
+@include mobile_1024 {
+  .callback-button_mobile {
+    width: 26px;
+    height: 26px;
+
+    font-size: 0;
+
+    border-radius: 13px;
+    border: none;
+    background-image: url('../../image/phone_icon@2x.png');
+
+    @include bg-options(no-repeat, contain, center);
+  }
+
+  .callback-button_mobile_footer {
+    width: 100%;
+
+    padding: 1.2em 3.8em;
+
+    color: $secondary-text_color;
+    background-color: $primary-theme_color;
+    border: none;
+  }
+}

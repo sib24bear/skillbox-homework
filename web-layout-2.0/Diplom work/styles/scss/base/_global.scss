@@ -1,0 +1,52 @@
+.diplom {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.page {
+	min-width: 320px;
+	margin: 0;
+
+	font-family: $primary-font;
+	font-size: 20px;
+	line-height: normal;
+	letter-spacing: normal;
+	color: $primary-text_color;
+
+	background-color: $primary_bg-color;
+}
+
+a {
+  text-decoration: none;
+
+  color: $primary-text_color;
+}
+
+ul {
+  margin: 0;
+
+  padding: 0;
+}
+
+.page__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 4.65em;
+  padding-bottom: 5.2em;
+}
+
+.disable-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.error {
+  color: #ff0000;
+}

@@ -1,0 +1,53 @@
+.feedback-button {
+  padding: 1.17em 4em;
+
+  font-size: $large-text_font-size;
+  color: $secondary-text_color;
+
+  background-color: $primary-theme_color;
+  border: none;
+
+  @include mobile_1024 {
+    width: 100%;
+    max-width: 280px;
+
+    font-size: $small-text_font-size;
+  }
+}
+
+.feedback-button_skills {
+  padding: 1.15em 3.45em;
+}
+
+.feedback-button_projects {
+  padding: 1.21em 3.7em;
+}
+
+@include tablet_1200 {
+  .feedback-button_promo {
+    padding: 1.38em 5.36em;
+  }
+
+  .feedback-button_skills {
+    padding: 1.4em 4.8em;
+  }
+
+  .feedback-button_projects {
+    padding: 1.41em 5.1em;
+  }
+}
+
+@include mobile_1024 {
+  .feedback-button_promo {
+    padding: 1.22em 0;
+    box-shadow: 0 0 15px #ffffff4f;
+  }
+
+  .feedback-button_skills {
+    padding: 1.2em 0;
+  }
+
+  .feedback-button_projects {
+    padding: 1.21em 0;
+  }
+}

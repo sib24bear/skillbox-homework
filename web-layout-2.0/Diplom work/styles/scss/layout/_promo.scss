@@ -1,0 +1,100 @@
+.promo {
+  position: relative;
+
+  padding-top: 220px;
+  padding-bottom: 237px;
+
+  background-color: $secondary_bg-color;
+}
+
+.promo__wrapper {
+	position: relative;
+	z-index: 999;
+}
+
+.promo__btn {
+  margin-top: 2.4em;
+}
+
+.promo__background {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../../image/Ellipse.svg');
+
+  @include bg-options(no-repeat, 928px, right -109px bottom -140px);
+
+  z-index: 997;
+}
+
+.promo__img {
+  position: absolute;
+  right: 209px;
+  bottom: 0;
+  height: 95.3%;
+
+  z-index: 998;
+}
+
+  @include tablet_1200 {
+  .promo {
+    padding-top: 243px;
+    padding-bottom: 229px;
+  }
+
+  .promo__btn {
+    margin-top: 2.28em;
+  }
+
+  .promo__background {
+    background-size: 772px;
+    background-position: right -164px bottom -108px;
+  }
+
+  .promo__img {
+    right: 87px;
+    height: 91.5%;
+  }
+}
+
+@include mobile_1024 {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4.1em;
+
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .promo__btn {
+    margin-top: 1.65em;
+  }
+
+  .promo__background {
+    position: relative;
+    order: -1;
+
+    width: 320px;
+
+    margin-bottom: 0.8em;
+
+    background-size: 517px;
+    background-position: right -115px bottom -139px;
+  }
+
+  .promo__img {
+    position: relative;
+    right: 0;
+
+    display: block;
+    height: 100%;
+
+    margin-left: 77px;
+  }
+}

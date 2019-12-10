@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="diplom" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Гирев Максим - frontend-разработчик и верстальщик</title>
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-500.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-900.woff2" as="font">
+    <link rel="stylesheet" href="build/css/main.min.css">
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <button class="btn burger-button" aria-label="Меню">
+          <span class="burger-button__line"></span>
+        </button>
+
+        <nav class="nav header__nav">
+          <ul class="nav__list nav__list_header">
+            <li class="nav__item nav__item_header">
+              <a class="nav__link nav__link_header" href="#skills">Услуги</a>
+            </li>
+
+            <li class="nav__item nav__item_header">
+              <a class="nav__link nav__link_header" href="#projects">Портфолио</a>
+            </li>
+
+            <li class="nav__item nav__item_header">
+              <a class="nav__link nav__link_header" href="#rate">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="feedback feedback_header header__feedback">
+          <a class="contact-link contact-link_header" href="tel:+**********">+7(499) 995-55-77</a>
+
+          <button class="btn header__btn callback-button callback-button_mobile">Заказать звонок</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="promo promo__main">
+        <div class="wrapper promo__wrapper">
+          <h1 class="title promo-title">
+            <span class="promo-title__text">Гирев Максим</span>
+
+            <strong class="promo-title__description">Frontend-разработчик и веб-верстальщик</strong>
+          </h1>
+
+          <button class="btn feedback-button feedback-button_promo promo__btn">Узнать больше</button>
+        </div>
+
+        <div class="promo__background">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    type="image/webp"
+                    srcset="image/photo_desctop@1x.webp 1x,
+                            image/photo_desctop@2x.webp 2x"
+            >
+
+            <source media="(min-width: 1024px)"
+                    type="image/webp"
+                    srcset="image/photo_tablet@1x.webp 1x,
+                            image/photo_tablet@2x.webp 2x"
+            >
+
+            <source type="image/webp"
+                    srcset="image/photo_mobile@1x.webp 1x,
+                            image/photo_mobile@2x.webp 2x"
+            >
+
+            <source media="(min-width: 1200px)"
+                    srcset="image/photo_desctop@1x.png 1x,
+                            image/photo_desctop@2x.png 2x"
+            >
+
+            <source media="(min-width: 1024px)"
+                    srcset="image/photo_tablet@1x.png 1x,
+                            image/photo_tablet@2x.png 2x"
+            >
+
+            <img class="promo__img"
+            src="image/photo_mobile@1x.png"
+            srcset="image/photo_mobile@2x.png 2x"
+            alt="фото">
+          </picture>
+          <div class="flying-tag wrapper">
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_1-tag">{&nbsp;}</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_2-tag">#</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_3-tag">&#60;/&#62;</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_4-tag">&#60;div&#62;</span>
+            <span class="flying-tag__item flying-tag__item_promo flying-tag__item_promo_5-tag">&#60;div&#62;</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills page__section" id="skills">
+          <h2 class="title skills__title">Что я делаю</h2>
+
+          <ul class="skills__list wrapper skills__wrapper">
+            <li class="skills__item skills__item_icon-layout">
+              <p class="skills__text">
+                <a href="#">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</a>
+              </p>
+            </li>
+
+            <li class="skills__item skills__item_icon-adaptive">
+              <p class="skills__text">
+                <a href="#">Адаптивная вёрстка под все браузеры и&nbsp;устройства</a>
+              </p>
+            </li>
+
+            <li class="skills__item skills__item_icon-frontend">
+              <p class="skills__text">
+                <a href="#">Frontend–разработка и&nbsp;программирование</a>
+              </p>
+            </li>
+
+            <li class="skills__item skills__item_icon-correct">
+              <p class="skills__text">
+                <a href="#">Исправление и&nbsp;доработка существующей вёрстки</a>
+              </p>
+            </li>
+          </ul>
+
+          <button class="btn feedback-button feedback-button_skills">Узнать стоимость</button>
+      </section>
+
+      <section class="projects page__section" id="projects">
+        <h2 class="title">Примеры моих работ</h2>
+
+        <div class="slider projects__slider">
+          <div class="wrapper slider__wrapper owl-carousel">
+            <article class="slider__item" data-hash="zero">
+              <a class="slider__link" href="#">
+                <figure class="figure">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            type="image/webp"
+                            srcset="image/slider-img-1_desctop@1x.webp 1x,
+                                    image/slider-img-1_desctop@2x.webp 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            type="image/webp"
+                            srcset="image/slider-img-1_tablet@1x.webp 1x,
+                                    image/slider-img-1_tablet@2x.webp 2x"
+                    >
+
+                    <source type="image/webp"
+                            srcset="image/slider-img-1_mobile@1x.webp 1x,
+                                    image/slider-img-1_mobile@2x.webp 2x"
+                    >
+
+                    <source media="(min-width: 1200px)"
+                            srcset="image/slider-img-1_desctop@1x.jpeg 1x,
+                                    image/slider-img-1_desctop@2x.jpeg 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            srcset="image/slider-img-1_tablet@1x.jpeg 1x,
+                                    image/slider-img-1_tablet@2x.jpeg 2x"
+                    >
+
+                    <img class="figure__image" src="image/slider-img-1_mobile@1x.jpeg"
+                    srcset="image/slider-img-1_mobile@2x.jpeg 2x"
+                    alt="скриншот сайта">
+                  </picture>
+
+                  <figcaption class="figure__title">
+                    <h3 class="figure__text">Сайт психолога Веры Антоновой</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="slider__item" data-hash="one">
+              <a class="slider__link" href="#">
+                <figure class="figure slider__content">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            type="image/webp"
+                            srcset="image/slider-img-2_desctop@1x.webp 1x,
+                                    image/slider-img-2_desctop@2x.webp 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            type="image/webp"
+                            srcset="image/slider-img-2_tablet@1x.webp 1x,
+                                    image/slider-img-2_tablet@2x.webp 2x"
+                    >
+
+                    <source type="image/webp"
+                            srcset="image/slider-img-2_mobile@1x.webp 1x,
+                                    image/slider-img-2_mobile@2x.webp 2x"
+                    >
+
+                    <source media="(min-width: 1200px)"
+                            srcset="image/slider-img-2_desctop@1x.jpeg 1x,
+                                    image/slider-img-2_desctop@2x.jpeg 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            srcset="image/slider-img-2_tablet@1x.jpeg 1x,
+                                    image/slider-img-2_tablet@2x.jpeg 2x"
+                    >
+
+                    <img class="figure__image" src="image/slider-img-2_mobile@1x.jpeg"
+                    srcset="image/slider-img-2_mobile@2x.jpeg 2x"
+                    alt="скриншот сайта">
+                  </picture>
+
+                  <figcaption class="figure__title">
+                    <h3 class="figure__text">Сайт магазина детской одежды</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+
+            <article class="slider__item" data-hash="two">
+              <a class="slider__link" href="#">
+                <figure class="figure slider__content">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                            type="image/webp"
+                            srcset="image/slider-img-3_desctop@1x.webp 1x,
+                                    image/slider-img-3_desctop@2x.webp 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            type="image/webp"
+                            srcset="image/slider-img-3_tablet@1x.webp 1x,
+                                    image/slider-img-3_tablet@2x.webp 2x"
+                    >
+
+                    <source type="image/webp"
+                            srcset="image/slider-img-3_mobile@1x.webp 1x,
+                                    image/slider-img-3_mobile@2x.webp 2x"
+                    >
+
+                    <source media="(min-width: 1200px)"
+                            srcset="image/slider-img-3_desctop@1x.jpeg 1x,
+                                    image/slider-img-3_desctop@2x.jpeg 2x"
+                    >
+
+                    <source media="(min-width: 1024px)"
+                            srcset="image/slider-img-3_tablet@1x.jpeg 1x,
+                                    image/slider-img-3_tablet@2x.jpeg 2x"
+                    >
+
+                    <img class="figure__image" src="image/slider-img-3_mobile@1x.jpeg"
+                    srcset="image/slider-img-3_mobile@2x.jpeg 2x"
+                    alt="скриншот сайта">
+                  </picture>
+
+                  <figcaption class="figure__title">
+                    <h3 class="figure__text">Сайт магазина «Рыболов»</h3>
+                  </figcaption>
+                </figure>
+              </a>
+            </article>
+          </div>
+
+          <ul class="control-arrow slider__control">
+            <li class="control-arrow__item">
+              <button class="control-arrow__btn control-arrow__btn_left" aria-label="слайд влево"></button>
+            </li>
+
+            <li class="control-arrow__item">
+              <button class="control-arrow__btn control-arrow__btn_right" aria-label="слайд вправо"></button>
+            </li>
+          </ul>
+
+          <ul class="control-dots owl-dots slider__control">
+            <li class="control-dots__item">
+              <a class="control-dots__btn url" href="#zero" role="button" aria-label="слайд 1"></a>
+            </li>
+
+            <li class="control-dots__item">
+              <a class="control-dots__btn url" href="#one" role="button" aria-label="слайд 2"></a>
+            </li>
+
+            <li class="control-dots__item">
+              <a class="control-dots__btn url" href="#two" role="button" aria-label="слайд 3"></a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn feedback-button feedback-button_projects">Заказать проект</button>
+      </section>
+
+      <section class="rate" id="rate">
+        <div class="wrapper rate__wrapper">
+          <h2 class="title rate__title">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.</h2>
+
+          <p class="rate__text">
+            <small>Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально, в зависимости от сложности задач.</small>
+          </p>
+        </div>
+        <div class="flying-tag wrapper">
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_1-tag">{&nbsp;}</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_2-tag">#</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_3-tag">&#60;/&#62;</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_4-tag">&#60;div&#62;</span>
+          <span class="flying-tag__item flying-tag__item_rate flying-tag__item_rate_5-tag">{&nbsp;}</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <nav class="nav footer__nav">
+          <ul class="nav__list nav__list_footer">
+            <li class="nav__item nav__item_footer">
+              <a class="nav__link nav__link_footer" href="#skills">Услуги</a>
+            </li>
+
+            <li class="nav__item nav__item_footer">
+              <a class="nav__link nav__link_footer" href="#projects">Портфолио</a>
+            </li>
+
+            <li class="nav__item nav__item_footer">
+              <a class="nav__link nav__link_footer" href="#rate">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="feedback feedback_footer footer__feedback">
+          <a class="contact-link footer__contact-link contact-link_type_phone" href="tel:+7**********">+7(***) ***-**-**</a>
+
+          <a class="contact-link footer__contact-link contact-link_type_email" href="mailto:maksim@girev.com">maksim@girev.com</a>
+        </div>
+
+        <div class="feedback feedback_footer footer__feedback">
+          <button class="btn footer__btn callback-button callback-button_footer callback-button_mobile_footer">Заказать звонок</button>
+
+          <div class="social-likes footer__social">
+            <a class="social-likes__service social-likes__service_type-vk" href="http://vk.com" aria-label="VK"></a>
+
+            <a class="social-likes__service social-likes__service_type-facebook" href="http://facebook.com" aria-label="Facebook"></a>
+
+            <a class="social-likes__service social-likes__service_type-twitter" href="http://twitter.com" aria-label="Twitter"></a>
+
+            <a class="social-likes__service social-likes__service_type-instagram" href="http://instagram.com" aria-label="Instagram"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">&#169; Гирев Максим, 2019</p>
+      </div>
+    </footer>
+
+    <div class="modal modal__inner modal-callback">
+      <div class="modal__container">
+        <div class="modal__head">
+          <h4 class="modal__title">Заказать звонок</h4>
+          <button class="modal__close-btn" type="button" title="Закрыть окно" aria-label="Закрыть окно"></button>
+        </div>
+        <div class="modal__content">
+          <form class="form modal__form" method = "post" action = "https://www.briskforms.com/go/dbe8134ad474b4c435bd24bca7055ee1">
+            <div class="form-field">
+              <input class="form-field__input" id="userNameModal" name="Имя" type="text" maxlength="15" required>
+              <label class="form-field__label" for="userNameModal">Ваше имя</label>
+            </div>
+
+            <div class="form-field">
+              <input class="form-field__input" id="userPhoneModal" name="Телефон" type="tel" required>
+              <label class="form-field__label" for="userPhoneModal">Ваш телефон</label>
+            </div>
+
+            <label class="checkbox__label">
+              <input class="checkbox" checked="checked" name="agree" type="checkbox">
+              <span class="checkbox__content">
+                Я соглашаюсь на обработку моих
+                <a class="checkbox__link" href="https://skillbox.ru/privacy_policy.pdf" target="_blank">персональных данных</a>
+              </span>
+            </label>
+
+            <button class="submit-btn form__submit" type="submit">Позвоните мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__inner modal-feetback">
+      <div class="modal__container modal-feetback__container">
+        <div class="modal__head">
+          <h4 class="modal__title">Хочу узнать больше</h4>
+          <button class="modal__close-btn" type="button" title="Закрыть окно" aria-label="Закрыть окно"></button>
+        </div>
+        <div class="modal__content">
+          <form class="form modal__form" method = "post" action = "https://www.briskforms.com/go/dbe8134ad474b4c435bd24bca7055ee1">
+            <div class="form-field">
+              <input class="form-field__input" id="userNameModalFeetback" name="Имя" type="text" maxlength="15" required>
+              <label class="form-field__label" for="userNameModalFeetback">Ваше имя</label>
+            </div>
+
+            <div class="form-field">
+              <input class="form-field__input" id="userEmailModalFeetback" name="Email" type="text" maxlength="30" required>
+              <label class="form-field__label" for="userEmailModalFeetback">Ваша электронная почта</label>
+            </div>
+
+            <textarea class="form-field__textarea" name="Описание вопроса" placeholder="Ваш вопрос" required></textarea>
+
+            <label class="checkbox__label checkbox__label_feedback">
+              <input class="checkbox" checked="checked" name="agree" type="checkbox">
+              <span class="checkbox__content checkbox__content_feedback">
+                Я соглашаюсь на обработку моих
+                <a class="checkbox__link" href="https://skillbox.ru/privacy_policy.pdf" target="_blank">персональных данных</a>
+              </span>
+            </label>
+            <button class="submit-btn form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="build/js/main.js"></script>
+  </body>
+</html>

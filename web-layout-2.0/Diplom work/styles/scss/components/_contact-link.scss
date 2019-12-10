@@ -1,0 +1,55 @@
+.contact-link {
+  font-size: 25px;
+
+  color: $contact-link_color;
+
+  &::before {
+    content: '';
+    display: inline-block;
+
+    width: 22px;
+    height: 18px;
+
+    margin-right: 16px;
+
+    @include bg-options(no-repeat, contain, bottom);
+  }
+
+  @include mobile_1024 {
+    font-size: $large-text_font-size;
+
+    &::before {
+      width: 13px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.contact-link_header {
+  font-weight: 700;
+}
+
+.contact-link_type_phone {
+  margin-top: 5px;
+
+  &::before {
+    background-image: url("../../image/phone@2x.png");
+  }
+
+  @include mobile_1024 {
+    margin-top: 0;
+  }
+}
+
+.contact-link_type_email {
+  margin-top: 29px;
+
+  &::before {
+    background-image: url("../../image/envelope@2x.png");
+  }
+
+  @include mobile_1024 {
+    margin-top: 23px;
+    margin-left: 0;
+  }
+}

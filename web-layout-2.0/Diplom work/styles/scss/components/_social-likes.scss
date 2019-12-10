@@ -1,0 +1,27 @@
+.social-likes__service {
+  display: inline-block;
+
+  width: 35px;
+  height: 29px;
+
+  margin-right: 15px;
+
+  @include bg-options(no-repeat, cover, 0);
+
+  background-image: url('../../image/social-likes-sprite_desctop@2x.png');
+
+}
+
+.social-likes__service_type-facebook {
+  background-position-x: -35px;
+}
+
+.social-likes__service_type-twitter {
+  background-position-x: -70px;
+}
+
+.social-likes__service_type-instagram {
+  background-position-x: -105px;
+
+  margin-right: 0;
+}

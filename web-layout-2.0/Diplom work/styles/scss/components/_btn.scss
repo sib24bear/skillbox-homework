@@ -1,0 +1,11 @@
+.btn {
+  padding: .85em 2.65em;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

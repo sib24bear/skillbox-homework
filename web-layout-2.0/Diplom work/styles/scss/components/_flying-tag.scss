@@ -1,0 +1,170 @@
+.flying-tag {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 997;
+}
+
+.flying-tag__item {
+  position: absolute;
+  font-size: 48px;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+  user-select: none;
+}
+
+.flying-tag__item_promo {
+  @include bg-gradient($gradient-angle, $primary_gradient-color, $secondary-gradient-color);
+
+  background-clip: text;
+  color: transparent;
+}
+
+.flying-tag__item_promo_1-tag {
+  font-size: 48px;
+  transform: translate(-245px, 58px) rotate(30deg);
+}
+
+.flying-tag__item_promo_2-tag {
+  font-size: 56px;
+  transform: translate(-129px, 288px) rotate(16deg);
+}
+
+.flying-tag__item_promo_3-tag {
+  font-size: 40px;
+  transform: translate(2px, 593px) rotate(-23deg);
+}
+
+.flying-tag__item_promo_4-tag {
+  font-size: 39px;
+  transform: translate(574px, 463px) rotate(20deg);
+}
+
+.flying-tag__item_promo_5-tag {
+  font-size: 30px;
+  transform: translate(412px, 90px) rotate(-13deg);
+}
+
+.flying-tag__item_rate {
+  color: $secondary-text_color;
+}
+
+.flying-tag__item_rate_1-tag {
+  font-size: 48px;
+  transform: translate(-245px, 60px) rotate(29deg);
+}
+
+.flying-tag__item_rate_2-tag {
+  font-size: 56px;
+  transform: translate(-129px, 249px) rotate(16deg);
+}
+
+.flying-tag__item_rate_3-tag {
+  font-size: 40px;
+  transform: translate(1282px, 75px)  rotate(-23deg);
+}
+
+.flying-tag__item_rate_4-tag {
+  font-size: 38px;
+  transform: translate(1047px, 302px) rotate(20deg);
+}
+
+.flying-tag__item_rate_5-tag {
+  font-size: 50px;
+  transform: translate(1391px, 256px) rotate(-17deg);
+}
+
+@media (max-width: 1739.9px) {
+  .flying-tag {
+    overflow: hidden;
+  }
+}
+
+@include tablet_1200 {
+  .flying-tag {
+    overflow: inherit;
+  }
+
+  .flying-tag__item_promo_1-tag {
+    font-size: 48px;
+    transform: translate(39px, 79px) rotate(30deg);
+  }
+
+  .flying-tag__item_promo_2-tag {
+    font-size: 56px;
+    transform: translate(19px, 553px) rotate(16deg);
+  }
+
+  .flying-tag__item_promo_3-tag {
+    font-size: 40px;
+    transform: translate(318px, 507px) rotate(-23deg);
+  }
+
+  .flying-tag__item_promo_4-tag {
+    font-size: 39px;
+    transform: translate(370px, 159px) rotate(14deg);
+  }
+
+  .flying-tag__item_promo_5-tag {
+    font-size: 30px;
+    transform: translate(848px, 73px) rotate(-13deg);
+  }
+
+  .flying-tag__item_rate_1-tag {
+    font-size: 32px;
+    transform: translate(116px, 22px) rotate(28deg);
+  }
+
+  .flying-tag__item_rate_2-tag {
+    font-size: 40px;
+    transform: translate(-7px, 178px) rotate(16deg);
+  }
+
+  .flying-tag__item_rate_3-tag {
+    transform: translate(834px, 285px) rotate(-23deg);
+  }
+
+  .flying-tag__item_rate_4-tag {
+    font-size: 24px;
+    transform: translate(473px, 304px) rotate(20deg);
+  }
+
+  .flying-tag__item_rate_5-tag {
+    font-size: 19px;
+    transform: translate(907px, 81px) rotate(-17deg);
+  }
+}
+
+@include mobile_1024 {
+  .flying-tag__item_promo_1-tag {
+    font-size: 25px;
+    transform: translate(29px, -35px) rotate(30deg);
+  }
+
+  .flying-tag__item_promo_2-tag {
+    font-size: 28px;
+    transform: translate(17px, 70px) rotate(16deg);
+  }
+
+  .flying-tag__item_promo_3-tag {
+    font-size: 20px;
+    transform: translate(151px, -54px) rotate(-29deg);
+  }
+
+  .flying-tag__item_promo_4-tag {
+    font-size: 16px;
+    transform: translate(248px, 344px) rotate(35deg);
+  }
+
+  .flying-tag__item_promo_5-tag {
+    font-size: 16px;
+    transform: translate(226px, 10px) rotate(18deg);
+  }
+
+  .flying-tag__item_rate {
+    display: none;
+  }
+}

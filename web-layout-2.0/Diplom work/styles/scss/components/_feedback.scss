@@ -1,0 +1,20 @@
+.feedback {
+  display: flex;
+}
+
+.feedback_header {
+  align-items: center;
+
+  @include tablet_1200 {
+    order: 2;
+  }
+
+  @include mobile_1024 {
+    flex-grow: 2;
+    justify-content: space-between;
+  }
+}
+
+.feedback_footer {
+  flex-direction: column;
+}
