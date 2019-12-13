@@ -1,16 +1,41 @@
 .callback-button {
+  position: relative;
   font-size: $small-text_font-size;
 
   color: $secondary-theme_color;
   background-color: $primary_bg-color;
   border: 1px solid $secondary-theme_color;
+
+  overflow: hidden;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: -25px;
+    left: -75px;
+
+    width: 50px;
+    height: 90px;
+
+    background-color: #ff0000;
+    opacity: .2;
+
+    transform: rotate(35deg);
+    transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  &:hover::after {
+    left: 120%;
+    transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
 }
 
 .callback-button_footer {
   padding: 0.85em 4em;
 }
 
-@include mobile_1024 {
+@include mobile_768 {
   .callback-button_mobile {
     width: 26px;
     height: 26px;
@@ -31,6 +56,24 @@
 
     color: $secondary-text_color;
     background-color: $primary-theme_color;
-    border: none;
+    border: 1px solid $primary-theme_color;
+    transition: all 0.3s ease-in-out;
+
+    &::after {
+      content: none;
+    }
+
+    &:hover {
+      border: 1px dashed $primary-theme_color;
+      background-color: transparent;
+      border-radius: 10px;
+      color: $primary-theme_color;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:active {
+      border: 1px solid $primary-theme_color;
+      transition: all 0.5s linear;
+    }
   }
 }

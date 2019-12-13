@@ -138,7 +138,17 @@
   }
 }
 
-@include mobile_1024 {
+@include tablet_1024 {
+  .flying-tag__item_promo_5-tag {
+    transform: translate(653px,23px) rotate(-18deg);
+  }
+
+  .flying-tag__item_rate {
+    display: none;
+  }
+}
+
+@include mobile_768 {
   .flying-tag__item_promo_1-tag {
     font-size: 25px;
     transform: translate(29px, -35px) rotate(30deg);
@@ -162,9 +172,5 @@
   .flying-tag__item_promo_5-tag {
     font-size: 16px;
     transform: translate(226px, 10px) rotate(18deg);
-  }
-
-  .flying-tag__item_rate {
-    display: none;
   }
 }

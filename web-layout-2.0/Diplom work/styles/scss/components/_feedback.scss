@@ -9,7 +9,7 @@
     order: 2;
   }
 
-  @include mobile_1024 {
+  @include mobile_768 {
     flex-grow: 2;
     justify-content: space-between;
   }

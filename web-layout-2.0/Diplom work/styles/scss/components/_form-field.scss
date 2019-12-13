@@ -9,10 +9,12 @@
   font-size: 22px;
   line-height: 20px;
 
-  transform: translateY(-27px);
-  transition: all 0.3s linear;
+  cursor: pointer;
 
-  @include mobile_1024 {
+  transform: translateY(-27px);
+  transition: all 0.2s linear;
+
+  @include mobile_768 {
     font-size: 17px;
   }
 }
@@ -28,6 +30,19 @@
   &::placeholder {
     color: transparent;
   }
+
+  &:focus {
+    animation: showInputText 1s linear forwards;
+  }
+}
+
+@keyframes showInputText {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
+  }
 }
 
 .form-field__input:focus + .form-field__label,
@@ -35,7 +50,7 @@
   padding-left: 0;
   font-size: 16px;
   transform: translateY(-50px);
- }
+}
 
 .form-field__textarea {
   display: block;

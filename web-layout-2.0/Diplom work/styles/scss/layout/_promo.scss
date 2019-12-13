@@ -39,7 +39,7 @@
   z-index: 998;
 }
 
-  @include tablet_1200 {
+@include tablet_1200 {
   .promo {
     padding-top: 243px;
     padding-bottom: 229px;
@@ -60,7 +60,18 @@
   }
 }
 
-@include mobile_1024 {
+@include tablet_1024 {
+  .promo__img {
+    right: 0px;
+    height: 84.5%;
+  }
+
+  .promo__background {
+    background-size: 710px;
+  }
+}
+
+@include mobile_768 {
   .promo {
     display: flex;
     flex-direction: column;

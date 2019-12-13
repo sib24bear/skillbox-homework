@@ -14,9 +14,14 @@
     position: absolute;
     left: 0;
     top: 9px;
+
     width: 16px;
     height: 16px;
+
     border: 1px solid #FF5733;
+
+    cursor: pointer;
+    
     box-sizing: border-box;
     background-color: $primary_bg-color;
   }

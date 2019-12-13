@@ -35,18 +35,21 @@ $(document).ready(function() {
       margin: 30,
       nav: false,
       dots: false,
-      URLhashListener: true,
       autoplayHoverPause: true,
-      startPosition: 'URLHash',
       responsive: {
         320:{
             items: 1,
+            dots: true,
+            dotsEach: 1,
         },
-        1024:{
+        768:{
             items: 2,
+            dots: true,
+            dotsEach: 1,
         },
         1200:{
             items: 3,
+            dots: false,
         }
       }
   });
@@ -127,6 +130,13 @@ $(document).ready(function() {
     };
   });
 
+  $('.pop-up__btn').on('click', function(){
+    $(this).parents('.pop-up').addClass('hidden');
+    setTimeout(function() {
+      $('.pop-up').removeClass('open').removeClass('hidden');
+    }, 1000);
+  });
+
   $('input[type = "tel"]').inputmask({ "mask": "+7 (999) 999-9999"});
 
   $('.form').each( function() {
@@ -146,6 +156,37 @@ $(document).ready(function() {
           required: true,
         }
       },
+
+      submitHandler(form) {
+        let th = $(form);
+
+        $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: th.serialize(),
+        // eslint-disable-next-line func-names
+      }).done(() => {
+        console.log('send ok');
+        
+        $modalContainer.removeClass('open');
+        $modalInner.addClass('hidden');
+        $page.removeClass('disable-scroll');
+
+        setTimeout(function delayCloseModalFrame() {
+          $modalInner.removeClass('visible').removeClass('hidden');
+          th.trigger('reset');
+          $('.pop-up').addClass('open');
+          setTimeout(function() {
+            $('.pop-up').addClass('hidden');
+            setTimeout(function() {
+              $('.pop-up').removeClass('open').removeClass('hidden');
+            }, 1000);
+          }, 5000);
+        }, 3000);
+      });
+
+        return false;
+      }
     });
   });
 });

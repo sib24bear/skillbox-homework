@@ -7,7 +7,7 @@
 
   color: $primary-title_color;
 
-  @include mobile_1024 {
+  @include mobile_768 {
     text-align: center;
 
     font-size: $small-title_font-size;

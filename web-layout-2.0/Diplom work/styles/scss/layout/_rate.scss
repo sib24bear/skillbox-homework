@@ -56,9 +56,9 @@
   }
 }
 
-@include mobile_1024 {
+@include tablet_1024 {
   .rate__wrapper {
-    padding: 2em 20px 2.2em 20px;
+    padding: 2.7em 2em 3.05em 2em;
   }
 
   .rate__title {
@@ -78,5 +78,11 @@
 
     line-height: 1.96;
     letter-spacing: normal;
+  }
+}
+
+@include mobile_768 {
+  .rate__wrapper {
+    padding: 2em 20px 2.2em 20px;
   }
 }

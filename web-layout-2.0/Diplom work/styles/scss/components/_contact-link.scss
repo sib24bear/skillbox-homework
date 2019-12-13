@@ -3,6 +3,13 @@
 
   color: $contact-link_color;
 
+  transition: all 0.5s linear;
+
+  &:hover {
+    color: $primary-theme_color;
+    transition: all 0.4s linear;
+  }
+
   &::before {
     content: '';
     display: inline-block;
@@ -15,7 +22,7 @@
     @include bg-options(no-repeat, contain, bottom);
   }
 
-  @include mobile_1024 {
+  @include mobile_768 {
     font-size: $large-text_font-size;
 
     &::before {
@@ -36,7 +43,7 @@
     background-image: url("../../image/phone@2x.png");
   }
 
-  @include mobile_1024 {
+  @include mobile_768 {
     margin-top: 0;
   }
 }
@@ -48,7 +55,7 @@
     background-image: url("../../image/envelope@2x.png");
   }
 
-  @include mobile_1024 {
+  @include mobile_768 {
     margin-top: 23px;
     margin-left: 0;
   }

@@ -1,15 +1,39 @@
+.social-likes {
+  display: flex;
+}
+
+.social-likes__item {
+  list-style-type: none;
+  margin-right: 15px;
+}
+
 .social-likes__service {
   display: inline-block;
 
   width: 35px;
   height: 29px;
 
-  margin-right: 15px;
-
   @include bg-options(no-repeat, cover, 0);
 
   background-image: url('../../image/social-likes-sprite_desctop@2x.png');
 
+  transition:
+  filter 0.6s ease-in-out,
+  transform 0.3s ease-in-out;
+
+  &:hover {
+    filter: hue-rotate(-288deg);
+    transform: scale(1.1);
+
+    transition:
+    filter 0.6s ease-in-out,
+    transform 0.3s ease-in-out;
+  }
+
+  &:active {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease-in-out;
+  }
 }
 
 .social-likes__service_type-facebook {
@@ -22,6 +46,4 @@
 
 .social-likes__service_type-instagram {
   background-position-x: -105px;
-
-  margin-right: 0;
 }

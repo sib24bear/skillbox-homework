@@ -25,6 +25,18 @@ a {
   text-decoration: none;
 
   color: $primary-text_color;
+
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: #656e83;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:active {
+    color: $primary-theme_color;
+    transition: color 0.1s ease-in-out;
+  }
 }
 
 ul {

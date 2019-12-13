@@ -78,7 +78,13 @@
   }
 }
 
-@include mobile_1024 {
+@include tablet_1024 {
+  .skills__list {
+    padding: 0;
+  }
+}
+
+@include mobile_768 {
   .skills {
     padding-top: 2.35em;
     padding-bottom: 2.6em;

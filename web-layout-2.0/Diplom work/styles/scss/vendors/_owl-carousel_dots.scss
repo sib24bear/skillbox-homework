@@ -1,0 +1,46 @@
+.owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 4.9em;
+
+  @include mobile_768 {
+    margin-top: 2.1em;
+  }
+}
+
+.owl-dot {
+  margin: 0 15px;
+  outline: none;
+
+  & span {
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: 1px solid #ebebeb;
+    border-radius: 9px;
+    background-color: #ebebeb;
+    cursor: pointer;
+
+    transition: all 0.5s linear;
+  }
+
+  &.active span,
+  &:hover span {
+    border: 1px solid $primary-theme_color;
+    background-color: $primary-theme_color;
+    transition: all 0.5s linear;
+  }
+
+  @include mobile_768 {
+    margin: 0 8px;
+
+    & span {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+    }
+  }
+}

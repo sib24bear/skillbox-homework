@@ -6,6 +6,7 @@
 @import 'base/wrapper';
 @import 'components/btn';
 @import 'components/modal-frame';
+@import 'components/pop-up';
 @import 'components/form';
 @import 'components/form-field';
 @import 'components/checkbox';
@@ -25,7 +26,7 @@
 @import 'components/slider';
 @import 'components/figure';
 @import 'components/control-arrow';
-@import 'components/control-dots';
+@import 'vendors/owl-carousel_dots';
 @import 'layout/rate';
 @import 'layout/footer';
 @import 'components/social-likes';

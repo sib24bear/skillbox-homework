@@ -5,9 +5,24 @@
   color: $secondary-text_color;
 
   background-color: $primary-theme_color;
-  border: none;
+  border: 1px solid $primary-theme_color;
 
-  @include mobile_1024 {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px dashed $primary-theme_color;
+    background-color: transparent;
+    border-radius: 10px;
+    color: $primary-theme_color;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:active {
+    border: 1px solid $primary-theme_color;
+    transition: all 0.5s linear;
+  }
+
+  @include mobile_768 {
     width: 100%;
     max-width: 280px;
 
@@ -37,7 +52,7 @@
   }
 }
 
-@include mobile_1024 {
+@include mobile_768 {
   .feedback-button_promo {
     padding: 1.22em 0;
     box-shadow: 0 0 15px #ffffff4f;

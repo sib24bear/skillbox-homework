@@ -7,8 +7,13 @@
 		width: 1024px;
 		padding: 0 40px;
 	}
-	@include mobile_1024 {
-		width: 320px;
+
+	@include tablet_1024 {
+		width: 768px;
     padding: 0 20px;
+	}
+
+	@include mobile_768 {
+		width: 320px;
 	}
 }
