@@ -22,7 +22,7 @@
     @include bg-options(no-repeat, contain, bottom);
   }
 
-  @include mobile_768 {
+  @include tablet_785 {
     font-size: $large-text_font-size;
 
     &::before {
@@ -34,6 +34,16 @@
 
 .contact-link_header {
   font-weight: 700;
+
+  @include mobile_598 {
+    flex-grow: 2;
+    text-align: center;
+  }
+
+  @include mobile_498 {
+    flex-grow: inherit;
+    text-align: inherit;
+  }
 }
 
 .contact-link_type_phone {
@@ -43,7 +53,7 @@
     background-image: url("../../image/phone@2x.png");
   }
 
-  @include mobile_768 {
+  @include mobile_598 {
     margin-top: 0;
   }
 }
@@ -55,7 +65,7 @@
     background-image: url("../../image/envelope@2x.png");
   }
 
-  @include mobile_768 {
+  @include mobile_598 {
     margin-top: 23px;
     margin-left: 0;
   }

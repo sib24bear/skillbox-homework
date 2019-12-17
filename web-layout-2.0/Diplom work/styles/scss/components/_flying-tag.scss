@@ -148,7 +148,52 @@
   }
 }
 
-@include mobile_768 {
+@include tablet_785 {
+  .flying-tag__item_promo_1-tag {
+    font-size: 25px;
+    transform: translate(39px, 79px) rotate(30deg);
+  }
+
+  .flying-tag__item_promo_2-tag {
+    font-size: 28px;
+    transform: translate(282px, 437px) rotate(16deg);
+  }
+
+  .flying-tag__item_promo_3-tag {
+    font-size: 20px;
+    transform: translate(154px, 184px) rotate(-23deg);;
+  }
+
+  .flying-tag__item_promo_4-tag {
+    font-size: 24px;
+    transform: translate(304px, 238px) rotate(-7deg);
+  }
+
+  .flying-tag__item_promo_5-tag {
+    font-size: 22px;
+    transform: translate(459px, 35px) rotate(21deg);
+  }
+}
+
+@include tablet_680 {
+  .flying-tag__item_promo_1-tag {
+    transform: translate(62px, -7px) rotate(30deg);
+  }
+
+  .flying-tag__item_promo_3-tag {
+    transform: translate(154px, 133px) rotate(-23deg);
+  }
+
+  .flying-tag__item_promo_4-tag {
+    transform: translate(386px, 549px) rotate(26deg);
+  }
+
+  .flying-tag__item_promo_5-tag {
+    transform: translate(459px, -26px) rotate(21deg);
+  }
+}
+
+@include mobile_598 {
   .flying-tag__item_promo_1-tag {
     font-size: 25px;
     transform: translate(29px, -35px) rotate(30deg);

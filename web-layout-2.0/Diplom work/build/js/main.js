@@ -42,7 +42,7 @@ $(document).ready(function() {
             dots: true,
             dotsEach: 1,
         },
-        768:{
+        598:{
             items: 2,
             dots: true,
             dotsEach: 1,
@@ -167,7 +167,7 @@ $(document).ready(function() {
         // eslint-disable-next-line func-names
       }).done(() => {
         console.log('send ok');
-        
+
         $modalContainer.removeClass('open');
         $modalInner.addClass('hidden');
         $page.removeClass('disable-scroll');

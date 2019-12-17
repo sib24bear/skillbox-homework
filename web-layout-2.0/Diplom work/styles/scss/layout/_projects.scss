@@ -7,10 +7,10 @@
     padding-bottom: 5.05em;
   }
 
-  @include mobile_768 {
+  @include mobile_598 {
     padding: 0 20px;
-    padding-top: 2.35em;
-    padding-bottom: 2.6em;
+    padding-top: 2.25em;
+    padding-bottom: 2.5em;
 
     width: 320px;
     margin: 0 auto;
@@ -25,7 +25,7 @@
     margin-bottom: 4.7em;
   }
 
-  @include mobile_768 {
+  @include mobile_598 {
     margin-top: 2.5em;
     margin-bottom: 2.57em;
   }

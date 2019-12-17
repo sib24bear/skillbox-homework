@@ -27,16 +27,18 @@
   }
 }
 
-@include mobile_768 {
+@include tablet_785 {
+  .figure__text {
+    font-size: $large-text_font-size;
+  }
+}
+
+@include mobile_598 {
   .figure__image {
     min-width: 100%;
   }
 
   .figure__title {
     margin-top: 0.75em;
-  }
-
-  .figure__text {
-    font-size: $large-text_font-size;
   }
 }

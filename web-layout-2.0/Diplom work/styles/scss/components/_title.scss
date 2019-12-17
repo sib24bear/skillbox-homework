@@ -7,10 +7,12 @@
 
   color: $primary-title_color;
 
-  @include mobile_768 {
-    text-align: center;
-
+  @include tablet_785 {
     font-size: $small-title_font-size;
     font-weight: 900;
+  }
+
+  @include mobile_598 {
+    text-align: center;
   }
 }
