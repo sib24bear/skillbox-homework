@@ -56,22 +56,40 @@
   }
 }
 
-@include mobile_768 {
+@include tablet_785 {
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer__nav {
+    flex-basis: 100%;
+    margin-bottom: 1em;
+  }
+
+  .footer__contact-link {
+    margin-left: 0;
+  }
+}
+
+@include mobile_598 {
   .footer__wrapper {
 		flex-direction: column;
     padding-top: 2em;
     padding-bottom: 2.22em;
   }
 
+  .footer__nav {
+    flex-basis: auto;
+    margin-bottom: 0;
+  }
+
   .footer__feedback {
     margin-top: 1.08em;
   }
 
-  .footer__contact-link {
-    margin-left: 0px;
-  }
-
   .footer__btn {
+    max-width: 280px;
+
     margin-top: 0.2em;
     margin-right: 0px;
   }

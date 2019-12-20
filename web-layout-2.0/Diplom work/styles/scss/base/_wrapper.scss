@@ -13,7 +13,12 @@
     padding: 0 20px;
 	}
 
-	@include mobile_768 {
-		width: 320px;
+	@include tablet_785 {
+		width: 100%;
+		max-width: 768px;
+	}
+
+	@include mobile_598 {
+		max-width: 480px;
 	}
 }

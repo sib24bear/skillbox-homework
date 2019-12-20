@@ -84,7 +84,13 @@
   }
 }
 
-@include mobile_768 {
+@include tablet_785 {
+  .skills__text {
+    font-size: $small-text_font-size;
+  }
+}
+
+@include mobile_598 {
   .skills {
     padding-top: 2.35em;
     padding-bottom: 2.6em;
@@ -92,7 +98,7 @@
 
   .skills__wrapper {
     margin-top: 2.3em;
-    margin-bottom: 2.75em;
+    margin-bottom: 2.65em;
   }
 
   .skills__title {
@@ -112,10 +118,6 @@
     padding-right: 1em;
 
     background-size: auto 2.85em;
-  }
-
-  .skills__text {
-    font-size: 16px;
   }
 
   .skills__item_icon-layout,

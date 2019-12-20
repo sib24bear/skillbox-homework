@@ -5,6 +5,10 @@
 .social-likes__item {
   list-style-type: none;
   margin-right: 15px;
+
+  @include mobile_498 {
+    margin-right: 20px;
+  }
 }
 
 .social-likes__service {

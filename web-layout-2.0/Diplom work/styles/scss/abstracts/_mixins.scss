@@ -12,12 +12,33 @@
 }
 // @include tablet_1024 {}
 
-@mixin mobile_768 {
-    @media (max-width: 767.9px) {
+@mixin tablet_785 {
+    @media (max-width: 784.9px) {
       @content;
     }
 }
-// @include mobile_768 {}
+// @include tablet_785 {}
+
+@mixin tablet_680 {
+    @media (max-width: 679.9px) {
+      @content;
+    }
+}
+// @include tablet_680 {}
+
+@mixin mobile_598 {
+    @media (max-width: 597.9px) {
+      @content;
+    }
+}
+// @include mobile_598 {}
+
+@mixin mobile_498 {
+    @media (max-width: 497.9px) {
+      @content;
+    }
+}
+// @include mobile_498 {}
 
 @mixin bg-gradient($direction, $fromColor, $toColor) {
     background-color: $toColor;

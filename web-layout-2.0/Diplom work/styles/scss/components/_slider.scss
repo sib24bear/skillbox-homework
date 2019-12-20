@@ -21,8 +21,16 @@
     margin-left: 0;
     margin-top: 4.9em;
   }
+}
 
-  @include mobile_768 {
-    margin-top: 2.1em;
+@include tablet_785 {
+  .slider__wrapper {
+    width: 580px;
+  }
+}
+
+@include mobile_498 {
+  .slider__wrapper {
+    width: 320px;
   }
 }

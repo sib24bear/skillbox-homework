@@ -22,7 +22,7 @@
     transition: all 0.5s linear;
   }
 
-  @include mobile_768 {
+  @include mobile_598 {
     width: 100%;
     max-width: 280px;
 
@@ -52,10 +52,15 @@
   }
 }
 
-@include mobile_768 {
+@include tablet_1024 {
   .feedback-button_promo {
-    padding: 1.22em 0;
-    box-shadow: 0 0 15px #ffffff4f;
+    padding: 1.22em 4em;
+  }
+}
+
+@include mobile_598 {
+  .feedback-button_promo {
+    padding: 1.2em 4em;
   }
 
   .feedback-button_skills {

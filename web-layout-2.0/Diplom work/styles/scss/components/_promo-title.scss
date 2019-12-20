@@ -24,19 +24,27 @@
   }
 }
 
-@include mobile_768 {
+@include tablet_1024 {
+  .promo-title__description {
+    font-size: 18px;
+  }
+}
+
+@include mobile_598 {
   .promo-title {
     font-size: 24px;
   }
 
   .promo-title__text {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 
     font-size: $small-title_font-size;
   }
 
   .promo-title__description {
+    display: block;
+
     font-size: $small-text_font-size;
-    line-height: 19px;
+    line-height: 24px;
   }
 }
