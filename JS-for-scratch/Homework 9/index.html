@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="lib.js" defer></script>
+    <script src="common.js" defer></script>
+  </head>
+
+  <body>
+    <div class="fixed-container">
+        <section class="new-note">
+            <h2 class="form-title">Добавить задачу</h2>
+
+            <form class="form-note" method="post" action="#">
+                <label class="title-input" for="description">Описание</label>
+                <textarea class="description" id="description" name="description"></textarea>
+
+                <button class="submit-btn" type="submit">Добавить задачу</button>
+            </form>
+        </section>
+
+        <section class="to-do-list">
+            <h1 class="to-do-list-title">Список задач:</h1>
+
+            <p class="list-empty listEmpty">Список пуст...</p>
+
+            <ul class="list-item listItem"></ul>
+        </section>
+    </div>
+  </body>
+</html>
