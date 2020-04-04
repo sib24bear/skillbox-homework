@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple translater</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="lib.js" defer></script>
+    <script src="common.js" defer></script>
+  </head>
+
+  <body>
+    <div class="translater wrapper">
+      <div class="language-panel">
+        <div class="language-panel__option">
+          <div class="select translate-from">
+            <span class="language-item">Перевести с ...</span>
+
+            <ul class="language-list">
+              <li class="language-list__item">
+                <span class="language-name" data-value="en">Английский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="es">Испанский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="it">Итальянский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="de">Немецкий</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="ru">Русский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="fr">Французский</span>
+              </li>
+            </ul>
+
+            <button class="btn more-language-btn" aria-label="Выбрать язык"></button>
+          </div>
+
+          <div class="select translate-to">
+            <span class="language-item">Перевести на ...</span>
+
+            <ul class="language-list">
+              <li class="language-list__item">
+                <span class="language-name" data-value="en">Английский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="es">Испанский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="it">Итальянский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="de">Немецкий</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="ru">Русский</span>
+              </li>
+
+              <li class="language-list__item">
+                <span class="language-name" data-value="fr">Французский</span>
+              </li>
+            </ul>
+
+            <button class="btn more-language-btn" aria-label="Выбрать язык"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="translate-fields">
+        <textarea class="translate-input" placeholder="Введите текст для перевода" rows="1" maxlength="10000" autofocus></textarea>
+
+        <div class="translate-output">
+          <p>Перевод...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
