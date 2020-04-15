@@ -1,0 +1,30 @@
+{
+  "name": "@sib24bear/homework-14",
+  "version": "1.0.1",
+  "description": "test build for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startWebpack": "webpack",
+    "startServer": "webpack-dev-server --open"
+  },
+  "keywords": [
+    "webpack",
+    "click-button"
+  ],
+  "author": "Girev Maxim",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm": "^6.14.4",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
