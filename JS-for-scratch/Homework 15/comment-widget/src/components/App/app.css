@@ -1,0 +1,25 @@
+.wrapper {
+	max-width: 960px;
+	min-width: 400px;
+
+	margin: 0 auto;
+	padding: 0 40px;
+	padding-top: 60px;
+}
+
+.title {
+    padding-bottom: 10px;
+    font-size: 18px;
+
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.comments-container {
+	margin-top: 20px;
+}
+
+.comments-container__title {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 18px;
+}

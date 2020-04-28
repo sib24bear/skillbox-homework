@@ -1,0 +1,56 @@
+.comment-list {
+    padding: 25px 40px 35px;
+}
+
+.comment-list__item {
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.comment__container {
+    padding: 10px 10px;
+    padding-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px 5px 0 0;
+}
+
+.comment__header {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.comment__name {
+    flex-grow: 1;
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.date-time {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+    
+    color: #8993ad;
+}
+
+.comment__btn {
+    padding: 10px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='329pt' viewBox='0 0 329.26933 329' width='329pt'%3E%3Cg fill='%23f44336'%3E%3Cpath d='m21.339844 329.398438c-5.460938 0-10.925782-2.089844-15.082032-6.25-8.34375-8.339844-8.34375-21.824219 0-30.164063l286.589844-286.59375c8.339844-8.339844 21.824219-8.339844 30.164063 0 8.34375 8.339844 8.34375 21.824219 0 30.164063l-286.589844 286.59375c-4.183594 4.179687-9.621094 6.25-15.082031 6.25zm0 0'/%3E%3Cpath d='m307.929688 329.398438c-5.460938 0-10.921876-2.089844-15.082032-6.25l-286.589844-286.59375c-8.34375-8.339844-8.34375-21.824219 0-30.164063 8.339844-8.339844 21.820313-8.339844 30.164063 0l286.589844 286.59375c8.34375 8.339844 8.34375 21.824219 0 30.164063-4.160157 4.179687-9.621094 6.25-15.082031 6.25zm0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f9f9f9;
+
+    cursor: pointer;
+}
+
+.comment__text {
+    font-size: 16px;
+	font-family: Arial, sans-serif;
+}
